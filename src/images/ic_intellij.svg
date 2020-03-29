@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.074" height="23.074" viewBox="0 0 23.074 23.074">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="0.998" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.26" stop-color="#f97a12"/>
+      <stop offset="0.46" stop-color="#b07b58"/>
+      <stop offset="0.72" stop-color="#577bae"/>
+      <stop offset="0.91" stop-color="#1e7ce5"/>
+      <stop offset="1" stop-color="#087cfa"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.003" y1="0.345" x2="1.212" y2="0.776" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f97a12"/>
+      <stop offset="0.07" stop-color="#cb7a3e"/>
+      <stop offset="0.15" stop-color="#9e7b6a"/>
+      <stop offset="0.24" stop-color="#757b91"/>
+      <stop offset="0.33" stop-color="#537bb1"/>
+      <stop offset="0.43" stop-color="#387ccc"/>
+      <stop offset="0.54" stop-color="#237ce0"/>
+      <stop offset="0.66" stop-color="#147cef"/>
+      <stop offset="0.79" stop-color="#0b7cf7"/>
+      <stop offset="1" stop-color="#087cfa"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.782" y1="0.977" x2="0.301" y2="-0.066" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fe315d"/>
+      <stop offset="0.08" stop-color="#cb417e"/>
+      <stop offset="0.16" stop-color="#9e4e9b"/>
+      <stop offset="0.25" stop-color="#755bb4"/>
+      <stop offset="0.34" stop-color="#5365ca"/>
+      <stop offset="0.44" stop-color="#386ddb"/>
+      <stop offset="0.54" stop-color="#2374e9"/>
+      <stop offset="0.66" stop-color="#1478f3"/>
+      <stop offset="0.79" stop-color="#0b7bf8"/>
+      <stop offset="1" stop-color="#087cfa"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.2" y1="0.241" x2="1.034" y2="1.327" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fe315d"/>
+      <stop offset="0.04" stop-color="#f63462"/>
+      <stop offset="0.1" stop-color="#df3a71"/>
+      <stop offset="0.17" stop-color="#c24383"/>
+      <stop offset="0.29" stop-color="#ad4a91"/>
+      <stop offset="0.55" stop-color="#755bb4"/>
+      <stop offset="0.92" stop-color="#1d76ed"/>
+      <stop offset="1" stop-color="#087cfa"/>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" transform="translate(0 0)">
+    <g id="icon_IntelliJIDEA">
+      <path id="Shape" d="M6.288,32.954.7,28.556,3.476,23.4l7.968,3.1Z" transform="translate(-0.448 -14.963)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      <path id="Shape-2" data-name="Shape" d="M38.038,6.8l-.433,13.34-8.869,3.569L23.4,20.253l7.788-8.076L27.8,4.677,30.863,1Z" transform="translate(-14.963 -0.639)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+      <path id="Shape-3" data-name="Shape" d="M45.839,6.8,38.809,15.1,35.6,4.677,38.665,1Z" transform="translate(-22.765 -0.639)" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>
+      <path id="Shape-4" data-name="Shape" d="M11.1,19.144,1.875,22.5l1.478-5.192,1.911-6.418L0,9.122,3.353,0l7.211.865L17.7,9.013Z" fill-rule="evenodd" fill="url(#linear-gradient-4)"/>
+      <g id="Group" transform="translate(4.326 4.326)">
+        <rect id="Rectangle-path" width="14.421" height="14.421"/>
+        <g id="Group_24" data-name="Group 24" transform="translate(1.37 1.803)">
+          <rect id="Rectangle-path-2" data-name="Rectangle-path" width="5.408" height="0.901" transform="translate(0 9.915)" fill="#fff"/>
+          <path id="Shape-5" data-name="Shape" d="M6.256,1.282V.2H3.3V1.282h.829V5.067H3.3V6.185H6.256V5.067H5.427V1.282Z" transform="translate(-2.399 -0.128)" fill="#fff" fill-rule="evenodd"/>
+          <path id="Shape-6" data-name="Shape" d="M15.983,6.129a2.419,2.419,0,0,1-1.19-.252A2.837,2.837,0,0,1,14,5.228l.829-.937a2.693,2.693,0,0,0,.5.433,1.056,1.056,0,0,0,.577.144.671.671,0,0,0,.577-.252,1.056,1.056,0,0,0,.216-.757V0h1.334V3.894a2.441,2.441,0,0,1-.144.937,1.8,1.8,0,0,1-.5.793,2.578,2.578,0,0,1-1.406.5" transform="translate(-9.241)" fill="#fff" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

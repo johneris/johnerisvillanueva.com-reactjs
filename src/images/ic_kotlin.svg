@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.18" height="20.18" viewBox="0 0 20.18 20.18">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.168" y1="0.919" x2="0.762" y2="-0.011" gradientUnits="objectBoundingBox">
+      <stop offset="0.108" stop-color="#c757bc"/>
+      <stop offset="0.214" stop-color="#d0609a"/>
+      <stop offset="0.425" stop-color="#e1725c"/>
+      <stop offset="0.605" stop-color="#ee7e2f"/>
+      <stop offset="0.743" stop-color="#f58613"/>
+      <stop offset="0.823" stop-color="#f88909"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.266" y1="1.466" x2="0.738" y2="0.524" gradientUnits="objectBoundingBox">
+      <stop offset="0.097" stop-color="#0095d5"/>
+      <stop offset="0.301" stop-color="#238ad9"/>
+      <stop offset="0.621" stop-color="#557bde"/>
+      <stop offset="0.864" stop-color="#7472e2"/>
+      <stop offset="1" stop-color="#806ee3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.14" y1="0.371" x2="0.687" y2="-0.136" gradientUnits="objectBoundingBox">
+      <stop offset="0.118" stop-color="#0095d5"/>
+      <stop offset="0.418" stop-color="#3c83dc"/>
+      <stop offset="0.696" stop-color="#6d74e1"/>
+      <stop offset="0.833" stop-color="#806ee3"/>
+    </linearGradient>
+  </defs>
+  <g id="Kotlin" transform="translate(-211 -693.84)">
+    <path id="Path_12" data-name="Path 12" d="M10.124,0,0,10.662V20.18L10.124,10.056,20.18,0Z" transform="translate(211 693.84)" fill="url(#linear-gradient)"/>
+    <path id="Path_10" data-name="Path 10" d="M0,137.7l10.124-10.124L20.18,137.7Z" transform="translate(211 576.323)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_11" data-name="Path 11" d="M0,0H10.124L0,10.931Z" transform="translate(211 693.84)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>
