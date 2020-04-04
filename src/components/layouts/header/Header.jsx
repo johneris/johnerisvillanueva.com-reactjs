@@ -37,7 +37,7 @@ const NavListItem = styled.li`
 const NavListItemLink = styled.a`
   padding: 4px 8px;
   margin: 8px;
-  color: rgb(225, 226, 231, 0.6);
+  color: #CCD5DB;
   font-size: 1.2em;
   text-transform: lowercase;
 
