@@ -5,7 +5,7 @@ import '../../../App.css';
 import ic_logo from '../../../images/ic_logo.svg';
 
 const Container = styled.nav`
-  background-color: #1F2029;
+  background-color: #1B262C;
 `;
 
 const Wrapper = styled.div`
@@ -19,6 +19,10 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const SideContainer = styled.div`
+  width: 150px;
+`;
+
 const NavListContainer = styled.div`
 `;
 
@@ -28,7 +32,6 @@ const NavList = styled.ul`
 `;
 
 const NavListItem = styled.li`
-  
 `;
 
 const NavListItemLink = styled.a`
@@ -36,6 +39,7 @@ const NavListItemLink = styled.a`
   margin: 8px;
   color: rgb(225, 226, 231, 0.6);
   font-size: 1.2em;
+  text-transform: lowercase;
 
   :hover {
     background-color: #22A055;
@@ -49,7 +53,7 @@ export class Header extends Component {
     return (
       <Container>
         <Wrapper>
-          <img src={ic_logo} alt="logo"/>
+          <SideContainer><img src={ic_logo} alt="logo"/></SideContainer>
           <NavListContainer>
             <NavList>
               <NavListItem><NavListItemLink href="#">Home</NavListItemLink></NavListItem>
@@ -58,6 +62,7 @@ export class Header extends Component {
               <NavListItem><NavListItemLink href="#">Contact</NavListItemLink></NavListItem>
             </NavList>
           </NavListContainer>
+          <SideContainer/>
         </Wrapper>
       </Container>
     )
