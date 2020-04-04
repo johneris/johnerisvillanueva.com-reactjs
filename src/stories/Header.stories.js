@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-import Header from "../components/layouts/header/Header";
+import Header from "../components/sections/header/Header";
 
 export default {
   title: 'Header',

@@ -1,14 +1,27 @@
-import React, { Component } from 'react'
-import './App.css'
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import Header from './components/layouts/header/Header'
+import './App.css';
+
+import Header from './components/sections/header/Header';
+import Home from './components/sections/home/Home';
+
+const Container = styled.nav`
+  height: 100%;
+
+  background-color: red;
+
+  display: flex;
+  flex-direction: column;
+`;
 
 export class App extends Component {
   render() {
     return (
-      <div>
+      <Container>
         <Header/>
-      </div>
+        <Home/>
+      </Container>
     )
   }
 }
