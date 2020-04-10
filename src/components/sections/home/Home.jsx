@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import SkillPreview from '../../ui_library/SkillPreview';
+import SocialMediaLink from '../../ui_library/SocialMediaLink';
 import Button from '../../ui_library/Button';
 
 import '../../../App.css';
@@ -64,7 +65,7 @@ const WebMobileLabel = styled.h1`
   font-size: 4em;
 `;
 
-const SkillsContainer = styled.div`
+const SkillListContainer = styled.div`
   margin-top: 2.8em;
 `;
 
@@ -81,15 +82,32 @@ const SkillList = styled.ul`
 const SkillListItem = styled.li`
 `;
 
-const MeImage = styled.img`
-  height: 38em;
-`
-
 const EmailLabel = styled.p`
-  margin-top: 1.4em;
+  margin-top: 1.4rem;
   color: #CCD5DB;
   font-size: 1.5em;
 `;
+
+const SocialMediaListContainer = styled.div`
+  margin-top: 1.4rem;
+`;
+
+const SocialMediaList = styled.ul`
+  list-style: none;
+  display: flex;
+  padding-inline-start: 0px;
+
+  li:not(:last-child) {
+    margin-right: 1.4em;
+  }
+`;
+
+const SocialMediaItem = styled.li`
+`;
+
+const MeImage = styled.img`
+  height: 38em;
+`
 
 export class Home extends Component {
   render() {
@@ -99,18 +117,26 @@ export class Home extends Component {
           <HeadingSkillsContainer>
             <FullStackLabel>Full Stack Developer</FullStackLabel>
             <WebMobileLabel>Web and Mobile</WebMobileLabel>
-            <SkillsContainer>
+            <SkillListContainer>
               <SkillList>
                 <SkillListItem><SkillPreview name="Android" logoSrc={ic_android}/></SkillListItem>
                 <SkillListItem><SkillPreview name="iOS" logoSrc={ic_ios}/></SkillListItem>
                 <SkillListItem><SkillPreview name="Web" logoSrc={ic_web}/></SkillListItem>
                 <SkillListItem><SkillPreview name="Backend" logoSrc={ic_backend}/></SkillListItem>
               </SkillList>
-            </SkillsContainer>
+            </SkillListContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
             <Button>Contact Me</Button>
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
+            <SocialMediaListContainer>
+              <SocialMediaList>
+                <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc={ic_android} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Github" logoSrc={ic_ios} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc={ic_web} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Twitter" logoSrc={ic_backend} link="#"/></SocialMediaItem>
+              </SocialMediaList>
+            </SocialMediaListContainer>
           </ContactContainer>
           <GreetingsContainer>
             <MeImage src={img_me}/>
