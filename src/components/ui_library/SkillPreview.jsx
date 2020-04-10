@@ -1,12 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 import '../../App.css'
 
 const Container = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+
+  max-width: 10em;
+  max-height: 10em;
 
   border-style: solid;
   border-color: #90B7CC;
@@ -19,11 +22,12 @@ const Container = styled.div`
 `;
 
 const SkillIcon = styled.img`
+  height: 50%;
 `;
 
 const SkillLabel = styled.h4`
   font-size: 1em;
-  margin-top: 12px;
+  margin-top: .75em;
   color: #CCD5DB;
 `;
 
