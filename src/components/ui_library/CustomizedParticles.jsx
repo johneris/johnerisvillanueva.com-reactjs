@@ -8,14 +8,14 @@ export class CustomizedParticles extends Component {
         params={{
           "particles": {
             "number": {
-              "value": 100,
+              "value": 40,
               "density": {
                 "enable": true,
                 "value_area": 2000
               }
             },
             "color": {
-              "value": "#d3d3d3"
+              "value": "#27363E"
             },
             "shape": {
               "type": "edge",
@@ -43,7 +43,7 @@ export class CustomizedParticles extends Component {
               }
             },
             "size": {
-              "value": 5,
+              "value": 30,
               "random": true,
               "anim": {
                 "enable": false,
