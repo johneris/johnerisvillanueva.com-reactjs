@@ -38,7 +38,7 @@ const NavListItemLink = styled.a`
   padding: 4px 8px;
   margin: 8px;
   color: #CCD5DB;
-  font-size: 1.2em;
+  font-size: 1.75em;
   text-transform: lowercase;
 
   :hover {

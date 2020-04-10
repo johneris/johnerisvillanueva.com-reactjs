@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import SkillPreview from '../../ui_library/SkillPreview';
+import Button from '../../ui_library/Button';
 
 import '../../../App.css';
 import ic_android from '../../../images/ic_android.svg';
 import ic_ios from '../../../images/ic_ios.svg';
 import ic_web from '../../../images/ic_web.svg';
 import ic_backend from '../../../images/ic_backend.svg';
+import img_me from '../../../images/img_me.png';
 
 const Container = styled.div`
   height: 100%;
@@ -21,27 +23,34 @@ const Wrapper = styled.div`
   margin-left: auto;
   margin-right: 0;
 
-  padding-top: 4em;
-  padding-bottom: 4em;
-
-  /* 4x4 Grid */
+  /* 2x2 Grid */
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
+  justify-content: space-between;
+  align-content: center;
 `;
 
 const HeadingSkillsContainer = styled.div`
-  background-color: blue;
+  /* background-color: blue; */
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
 `;
 
 const ContactContainer = styled.div`
-  background-color: black;
+  /* background-color: black; */
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 `;
 
 const GreetingsContainer = styled.div`
-  background-color: ghostwhite;
-
-  grid-column: 2 / span 1;
+  /* background-color: ghostwhite; */
+  grid-column: 3 / span 1;
   grid-row: 1 / span 2;
 `;
 
@@ -56,7 +65,7 @@ const WebMobileLabel = styled.h1`
 `;
 
 const SkillsContainer = styled.div`
-  margin-top: 56px;
+  margin-top: 2.8em;
 `;
 
 const SkillList = styled.ul`
@@ -65,11 +74,21 @@ const SkillList = styled.ul`
   padding-inline-start: 0px;
 
   li:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 2em;
   }
 `;
 
 const SkillListItem = styled.li`
+`;
+
+const MeImage = styled.img`
+  height: 38em;
+`
+
+const EmailLabel = styled.p`
+  margin-top: 1.4em;
+  color: #CCD5DB;
+  font-size: 1.5em;
 `;
 
 export class Home extends Component {
@@ -90,10 +109,11 @@ export class Home extends Component {
             </SkillsContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
-            <h1>Contact</h1>
+            <Button>Contact Me</Button>
+            <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
           </ContactContainer>
           <GreetingsContainer>
-            <h1>Greetings</h1>
+            <MeImage src={img_me}/>
           </GreetingsContainer>
         </Wrapper>
       </Container>

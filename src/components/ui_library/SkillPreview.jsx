@@ -5,15 +5,9 @@ import styled from 'styled-components';
 import '../../App.css'
 
 const Container = styled.div`
-  width: 100%;
-  height: 100%;
-
-  min-width: 8em;
-  min-height: 8em;
-
-  max-width: 10em;
-  max-height: 10em;
-
+  width: 10em;
+  height: 10em;
+  
   border-style: solid;
   border-color: #90B7CC;
   border-width: 1px;
@@ -36,7 +30,7 @@ const SkillLabel = styled.h4`
 
 export class SkillPreview extends Component {
   render() {
-    const { name, logoSrc, toolsSrc } = this.props
+    const { name, logoSrc } = this.props
     return (
       <Container>
         <SkillIcon src={logoSrc}></SkillIcon>
