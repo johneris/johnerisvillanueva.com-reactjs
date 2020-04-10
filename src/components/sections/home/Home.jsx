@@ -10,6 +10,9 @@ import ic_android from '../../../images/ic_android.svg';
 import ic_ios from '../../../images/ic_ios.svg';
 import ic_web from '../../../images/ic_web.svg';
 import ic_backend from '../../../images/ic_backend.svg';
+import ic_linkedin from '../../../images/ic_linkedin.svg';
+import ic_github from '../../../images/ic_github.svg';
+import ic_facebook from '../../../images/ic_facebook.svg';
 import img_me from '../../../images/img_me.png';
 
 const Container = styled.div`
@@ -131,10 +134,9 @@ export class Home extends Component {
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
             <SocialMediaListContainer>
               <SocialMediaList>
-                <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc={ic_android} link="#"/></SocialMediaItem>
-                <SocialMediaItem><SocialMediaLink name="Github" logoSrc={ic_ios} link="#"/></SocialMediaItem>
-                <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc={ic_web} link="#"/></SocialMediaItem>
-                <SocialMediaItem><SocialMediaLink name="Twitter" logoSrc={ic_backend} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc={ic_linkedin} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Github" logoSrc={ic_github} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc={ic_facebook} link="#"/></SocialMediaItem>
               </SocialMediaList>
             </SocialMediaListContainer>
           </ContactContainer>

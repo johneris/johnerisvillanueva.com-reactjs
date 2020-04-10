@@ -17,6 +17,7 @@ const Container = styled.div`
 
 const SocialMediaIcon = styled.img`
   height: 1.5em;
+  max-width: 1.5em;
 `
 
 export class SocialMediaLink extends Component {
