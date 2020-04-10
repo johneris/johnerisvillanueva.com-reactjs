@@ -15,23 +15,34 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-
+  width: 90%;
   height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  margin-left: auto;
+  margin-right: 0;
+
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  /* 4x4 Grid */
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 `;
 
 const HeadingSkillsContainer = styled.div`
-  /* background-color: blue; */
+  background-color: blue;
 `;
 
 const ContactContainer = styled.div`
-  /* background-color: black; */
+  background-color: black;
+`;
+
+const GreetingsContainer = styled.div`
+  background-color: ghostwhite;
+
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
 `;
 
 const FullStackLabel = styled.h2`
@@ -79,8 +90,11 @@ export class Home extends Component {
             </SkillsContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
-            <h1>B</h1>
+            <h1>Contact</h1>
           </ContactContainer>
+          <GreetingsContainer>
+            <h1>Greetings</h1>
+          </GreetingsContainer>
         </Wrapper>
       </Container>
     )

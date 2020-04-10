@@ -8,6 +8,9 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
 
+  min-width: 8em;
+  min-height: 8em;
+
   max-width: 10em;
   max-height: 10em;
 
