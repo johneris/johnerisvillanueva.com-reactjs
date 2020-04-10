@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import CustomizedParticles from '../../ui_library/CustomizedParticles';
 import SkillPreview from '../../ui_library/SkillPreview';
 import SocialMediaLink from '../../ui_library/SocialMediaLink';
 import Button from '../../ui_library/Button';
@@ -19,30 +18,9 @@ import img_me from '../../../images/img_me.png';
 const Container = styled.div`
   height: 100%;
   width: 100%;
-  background-color: #1B262C;
 `;
 
-const StyledCustomizedParticles = styled(CustomizedParticles)`
-  height: 100%;
-  width: 100%;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-`;
-
-const ContentContainer = styled.div`
-  height: 100%;
-  width: 100%;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-`;
-
-const ContentWrapper = styled.div`
+const Wrapper = styled.div`
   width: 90%;
   height: 100%;
 
@@ -170,39 +148,36 @@ export class Home extends Component {
   render() {
     return (
       <Container>
-        <StyledCustomizedParticles/>
-        <ContentContainer>
-          <ContentWrapper>
-            <HeadingSkillsContainer>
-              <FullStackLabel>Full Stack Developer</FullStackLabel>
-              <WebMobileLabel>Web and Mobile</WebMobileLabel>
-              <SkillListContainer>
-                <SkillList>
-                  <SkillListItem><SkillPreview name="Android" logoSrc={ic_android}/></SkillListItem>
-                  <SkillListItem><SkillPreview name="iOS" logoSrc={ic_ios}/></SkillListItem>
-                  <SkillListItem><SkillPreview name="Web" logoSrc={ic_web}/></SkillListItem>
-                  <SkillListItem><SkillPreview name="Backend" logoSrc={ic_backend}/></SkillListItem>
-                </SkillList>
-              </SkillListContainer>
-            </HeadingSkillsContainer>
-            <ContactContainer>
-              <Button>Contact Me</Button>
-              <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
-              <SocialMediaListContainer>
-                <SocialMediaList>
-                  <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc={ic_linkedin} link="#"/></SocialMediaItem>
-                  <SocialMediaItem><SocialMediaLink name="Github" logoSrc={ic_github} link="#"/></SocialMediaItem>
-                  <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc={ic_facebook} link="#"/></SocialMediaItem>
-                </SocialMediaList>
-              </SocialMediaListContainer>
-            </ContactContainer>
-            <GreetingsContainer>
-              <MeBackground/>
-              <GreetingsLabelContainer><GreetingsLabel>Hi, I'm Eris</GreetingsLabel></GreetingsLabelContainer>
-              <MeImage src={img_me}/>
-            </GreetingsContainer>
-          </ContentWrapper>
-        </ContentContainer>
+        <Wrapper>
+          <HeadingSkillsContainer>
+            <FullStackLabel>Full Stack Developer</FullStackLabel>
+            <WebMobileLabel>Web and Mobile</WebMobileLabel>
+            <SkillListContainer>
+              <SkillList>
+                <SkillListItem><SkillPreview name="Android" logoSrc={ic_android}/></SkillListItem>
+                <SkillListItem><SkillPreview name="iOS" logoSrc={ic_ios}/></SkillListItem>
+                <SkillListItem><SkillPreview name="Web" logoSrc={ic_web}/></SkillListItem>
+                <SkillListItem><SkillPreview name="Backend" logoSrc={ic_backend}/></SkillListItem>
+              </SkillList>
+            </SkillListContainer>
+          </HeadingSkillsContainer>
+          <ContactContainer>
+            <Button>Contact Me</Button>
+            <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
+            <SocialMediaListContainer>
+              <SocialMediaList>
+                <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc={ic_linkedin} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Github" logoSrc={ic_github} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc={ic_facebook} link="#"/></SocialMediaItem>
+              </SocialMediaList>
+            </SocialMediaListContainer>
+          </ContactContainer>
+          <GreetingsContainer>
+            <MeBackground/>
+            <GreetingsLabelContainer><GreetingsLabel>Hi, I'm Eris</GreetingsLabel></GreetingsLabelContainer>
+            <MeImage src={img_me}/>
+          </GreetingsContainer>
+        </Wrapper>
       </Container>
     )
   }
