@@ -6,7 +6,7 @@ import './App.css';
 import Header from './components/sections/header/Header';
 import Home from './components/sections/home/Home';
 
-const Container = styled.nav`
+const Container = styled.div`
   height: 100%;
 
   background-color: red;
