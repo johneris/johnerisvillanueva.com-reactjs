@@ -108,9 +108,34 @@ const SocialMediaList = styled.ul`
 const SocialMediaItem = styled.li`
 `;
 
+const MeBackground = styled.div`
+  height: 100%;
+  width: 19em;
+  background-color: #212B31;
+
+  position: absolute;
+  top: 0;
+  right: 9.7em;
+  z-index: 1;
+`
+
 const MeImage = styled.img`
   height: 38em;
+
+  position: relative;
+  z-index: 2;
 `
+
+const GreetingsLabel = styled.p`
+  color: #CCD5DB;
+  font-size: 1.5em;
+
+  position: relative;
+  top: 3.2em;
+  left: 8em;
+  z-index: 3;
+`;
+
 
 export class Home extends Component {
   render() {
@@ -141,6 +166,8 @@ export class Home extends Component {
             </SocialMediaListContainer>
           </ContactContainer>
           <GreetingsContainer>
+            <GreetingsLabel>Hi, I'm Eris</GreetingsLabel>
+            <MeBackground/>
             <MeImage src={img_me}/>
           </GreetingsContainer>
         </Wrapper>
