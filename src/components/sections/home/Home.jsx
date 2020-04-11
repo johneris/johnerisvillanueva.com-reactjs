@@ -174,7 +174,7 @@ const MeImage = styled.img`
     height: auto;
 
     position: static;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 `
 
@@ -195,7 +195,7 @@ const GreetingsLabelContainer = styled.div`
     width: auto;
 
     position: static;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 `;
 
