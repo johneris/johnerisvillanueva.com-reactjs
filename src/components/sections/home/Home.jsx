@@ -61,7 +61,7 @@ const Wrapper = styled.div`
 
 const HeadingSkillsContainer = styled.div`
   /* background-color: blue; */
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 
   display: flex;
@@ -84,7 +84,7 @@ const HeadingSkillsContainer = styled.div`
 
 const ContactContainer = styled.div`
   /* background-color: black; */
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 1;
   grid-row: 2 / span 1;
 
   display: flex;
@@ -107,7 +107,7 @@ const ContactContainer = styled.div`
 
 const GreetingsContainer = styled.div`
   /* background-color: ghostwhite; */
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
   grid-row: 1 / span 2;
 
   @media ${device.lowerThanLaptopL} { 
