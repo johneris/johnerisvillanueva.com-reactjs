@@ -46,7 +46,7 @@ const Wrapper = styled.div`
     margin-right: auto;
 
     /* 1x3 Grid */
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(2, calc((100vh - 4em)/2)) 38em;
     grid-column-gap: 2em;
     justify-content: space-between;
