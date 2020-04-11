@@ -1,11 +1,13 @@
+// all size is -1 to real size
+
 const size = {
-  mobileS: '320px',
-  mobileM: '375px',
-  mobileL: '425px',
-  tablet: '768px',
-  laptop: '1024px',
-  laptopL: '1440px',
-  desktop: '2560px'
+  mobileS: '319px',
+  mobileM: '374px',
+  mobileL: '424px',
+  tablet: '767px',
+  laptop: '1023px',
+  laptopL: '1439px',
+  desktop: '2559px'
 }
 
 export const device = {

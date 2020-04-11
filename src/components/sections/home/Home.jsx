@@ -52,6 +52,11 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-content: center;
   }
+
+  @media ${device.lowerThanTablet} {
+    /* 1x3 Grid */
+    grid-template-rows: calc((100vh - 4em) * 0.75) calc((100vh - 4em) * 0.25) 38em;
+  }
 `;
 
 const HeadingSkillsContainer = styled.div`
@@ -69,6 +74,11 @@ const HeadingSkillsContainer = styled.div`
     grid-row: 1 / span 1;
     
     justify-content: flex-end;
+  }
+
+  @media ${device.lowerThanTablet} {
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -88,6 +98,10 @@ const ContactContainer = styled.div`
 
     justify-content: flex-start;
     padding-top: 4em;
+  }
+
+  @media ${device.lowerThanTablet} {
+    padding-top: 1em;
   }
 `;
 
@@ -110,26 +124,47 @@ const GreetingsContainer = styled.div`
 const FullStackLabel = styled.h2`
   color: #FFFFFF;
   font-size: 2em;
+
+  @media ${device.lowerThanTablet} {
+    font-size: 1.5em;
+  }
 `;
 
 const WebMobileLabel = styled.h1`
   color: #FFFFFF;
   font-size: 4em;
+  
+  @media ${device.lowerThanTablet} {
+    font-size: 2.5em;
+  }
 `;
 
 const SkillListContainer = styled.div`
   margin-top: 2.8em;
 
   display: grid;
-  grid-template-columns: repeat(4, minmax(4em, 10em));
+  grid-template-columns: repeat(4, minmax(7em, 10em));
   grid-template-rows: 10em;
   grid-column-gap: 1em;
+
+  @media ${device.lowerThanTablet} {
+    margin-top: 1.5em;
+
+    grid-template-columns: repeat(2, minmax(7em, 10em));
+    grid-template-rows: repeat(2, minmax(7em, 10em));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+  }
 `;
 
 const EmailLabel = styled.p`
   margin-top: 1.4rem;
   color: #CCD5DB;
   font-size: 1.5em;
+
+  @media ${device.lowerThanTablet} {
+    font-size: 1em;
+  }
 `;
 
 const SocialMediaListContainer = styled.div`
