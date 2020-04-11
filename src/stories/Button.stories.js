@@ -5,7 +5,7 @@ import Button from "../components/ui_library/Button";
 
 export default {
   title: 'Button',
-  component: Button,
+  component: Button
 };
 
 export const Default = () => (

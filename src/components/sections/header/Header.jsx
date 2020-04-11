@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import '../../../App.css';
 import ic_logo from '../../../images/ic_logo.svg';
 
 const Container = styled.nav`
-  background-color: #1B262C;
+  height: ${props => {
+    return props.height;
+  }};
+
+  display: flex;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
@@ -51,7 +57,7 @@ const NavListItemLink = styled.a`
 export class Header extends Component {
   render() {
     return (
-      <Container>
+      <Container height={this.props.height}>
         <Wrapper>
           <SideContainer><img src={ic_logo} alt="logo"/></SideContainer>
           <NavListContainer>
@@ -68,5 +74,9 @@ export class Header extends Component {
     )
   }
 }
+
+Header.propTypes = {
+  height: PropTypes.number
+};
 
 export default Header

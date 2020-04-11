@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 
 export class CustomizedParticles extends Component {
   render() {
     return (
       <Particles 
+        width={this.props.width}
+        height={this.props.height}
         params={{
           "particles": {
             "number": {
@@ -119,5 +122,10 @@ export class CustomizedParticles extends Component {
     )
   }
 }
+
+CustomizedParticles.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number
+};
 
 export default CustomizedParticles

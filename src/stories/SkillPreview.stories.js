@@ -11,6 +11,11 @@ import ic_backend from '../images/ic_backend.svg';
 export default {
   title: 'SkillPreview',
   component: SkillPreview,
+  decorators: [storyFn => <div style={{ 
+    backgroundColor: '#1B262C', 
+    height: "100%",
+    width: "100%"
+  }}>{storyFn()}</div>]
 };
 
 export const android = () => (
