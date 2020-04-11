@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import './App.css';
+import { device } from './helpers/MediaQueryHelper';
 
 import CustomizedParticles from './components/ui_library/CustomizedParticles';
 import Header from './components/sections/header/Header';
@@ -16,11 +17,22 @@ const HeaderHomeContainer = styled.div`
   height: 100vh;
   width: 100%;
   background-color: #1B262C;
+
+  @media ${device.lowerThanLaptopL} {
+    height: calc(100vh + 38em);
+
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const HeaderContainer = styled.div`
   position: relative;
   z-index: 3;
+
+  @media ${device.lowerThanLaptopL} { 
+    position: static;
+  }
 `;
 
 const HomeContainer = styled.div`
@@ -31,6 +43,10 @@ const HomeContainer = styled.div`
   top: 0;
   left: 0;
   z-index: 2;
+
+  @media ${device.lowerThanLaptopL} { 
+    position: static;
+  }
 `;
 
 const ParticleContainer = styled.div`

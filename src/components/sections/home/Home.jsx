@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { device } from '../../../helpers/MediaQueryHelper';
+
 import SkillPreview from '../../ui_library/SkillPreview';
 import SocialMediaLink from '../../ui_library/SocialMediaLink';
 import Button from '../../ui_library/Button';
@@ -18,6 +20,10 @@ import img_me from '../../../images/img_me.png';
 const Container = styled.div`
   height: 100%;
   width: 100%;
+
+  @media ${device.lowerThanLaptopL} { 
+    height: auto;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -34,12 +40,36 @@ const Wrapper = styled.div`
   grid-column-gap: 2em;
   justify-content: space-between;
   align-content: center;
+
+  @media ${device.lowerThanLaptopL} {
+    width: 80%;
+    margin-right: auto;
+
+    /* 1x3 Grid */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, calc((100vh - 4em)/2)) 38em;
+    grid-column-gap: 2em;
+    justify-content: space-between;
+    align-content: center;
+  }
 `;
 
 const HeadingSkillsContainer = styled.div`
   /* background-color: blue; */
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  @media ${device.lowerThanLaptopL} {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    
+    justify-content: flex-end;
+  }
 `;
 
 const ContactContainer = styled.div`
@@ -51,12 +81,30 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+
+  @media ${device.lowerThanLaptopL} {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+
+    justify-content: flex-start;
+    padding-top: 4em;
+  }
 `;
 
 const GreetingsContainer = styled.div`
   /* background-color: ghostwhite; */
   grid-column: 3 / span 1;
   grid-row: 1 / span 2;
+
+  @media ${device.lowerThanLaptopL} { 
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const FullStackLabel = styled.h2`
@@ -110,6 +158,10 @@ const MeBackground = styled.div`
   top: 0;
   right: 9.7em;
   z-index: 1;
+
+  @media ${device.lowerThanLaptopL} {
+    display: none;
+  }
 `
 
 const MeImage = styled.img`
@@ -117,6 +169,13 @@ const MeImage = styled.img`
 
   position: relative;
   z-index: 2;
+
+  @media ${device.lowerThanLaptopL} {
+    height: auto;
+
+    position: static;
+    margin-bottom: 2em;
+  }
 `
 
 const GreetingsLabelContainer = styled.div`
@@ -130,11 +189,23 @@ const GreetingsLabelContainer = styled.div`
 
   display: flex;
   justify-content: center;
+
+  @media ${device.lowerThanLaptopL} { 
+    height: auto;
+    width: auto;
+
+    position: static;
+    margin-bottom: 2em;
+  }
 `;
 
 const GreetingsLabel = styled.div`
   color: #CCD5DB;
   font-size: 1.5em;
+
+  @media ${device.lowerThanLaptopL} { 
+    font-size: 2em;
+  }
 `;
 
 export class Home extends Component {
