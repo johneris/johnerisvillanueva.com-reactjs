@@ -231,9 +231,13 @@ const MeImage = styled.img`
     margin-bottom: 3em;
   }
 
+  @media (max-width: 767px) {
+    width: 22em;
+    margin-bottom: 0;
+  }
+
   @media (max-width: 424px) {
     width: 100%;
-    margin-bottom: 0;
   }
 `
 
@@ -264,6 +268,10 @@ const GreetingsLabel = styled.div`
 
   @media (max-width: 1439px) { 
     font-size: 2em;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 1.5em;
   }
 `;
 
