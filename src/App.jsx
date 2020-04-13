@@ -7,6 +7,7 @@ import { device } from './helpers/MediaQueryHelper';
 import CustomizedParticles from './components/ui_library/CustomizedParticles';
 import Header from './components/sections/header/Header';
 import Home from './components/sections/home/Home';
+import Footer from './components/sections/footer/Footer';
 
 const MainContainer = styled.div`
   display: flex;
@@ -83,7 +84,7 @@ export class App extends Component {
         </div>
         {/* Footer */}
         <div>
-          <h1>Footer</h1>
+          <Footer/>
         </div>
       </MainContainer>
     )
