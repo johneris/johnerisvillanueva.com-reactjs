@@ -75,6 +75,14 @@ export class App extends Component {
         <div>
           <h1>Projects</h1>
         </div>
+        {/* Skills */}
+        <div>
+          <h1>Skills</h1>
+        </div>
+        {/* Quote */}
+        <div>
+          <h1>Quote</h1>
+        </div>
         {/* About */}
         <div>
           <h1>About</h1>
