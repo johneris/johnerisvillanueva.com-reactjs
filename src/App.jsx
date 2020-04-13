@@ -7,6 +7,7 @@ import { device } from './helpers/MediaQueryHelper';
 import CustomizedParticles from './components/ui_library/CustomizedParticles';
 import Header from './components/sections/header/Header';
 import Home from './components/sections/home/Home';
+import Contact from './components/sections/contact/Contact';
 import Footer from './components/sections/footer/Footer';
 
 const MainContainer = styled.div`
@@ -79,13 +80,9 @@ export class App extends Component {
           <h1>About</h1>
         </div>
         {/* Contact */}
-        <div>
-          <h1>Contact</h1>
-        </div>
+        <Contact/>
         {/* Footer */}
-        <div>
-          <Footer/>
-        </div>
+        <Footer/>
       </MainContainer>
     )
   }
