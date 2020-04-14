@@ -16,6 +16,8 @@ const Container = styled.div`
 
   display: flex;
   flex-direction: row;
+
+  position: relative;
 `;
 
 const SkillContainer = styled.div`
@@ -29,6 +31,21 @@ const InfoContainer = styled.div`
   margin-right: 1em;
   display: flex;
   flex-direction: column;
+`;
+
+const LevelContainer = styled.div`
+  width: 8em;
+  height: 1.5em;
+
+  background-color: #90B7CC;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SkillIcon = styled.img`
@@ -56,14 +73,22 @@ const InfoDetail = styled.p`
   color: #CCD5DB;
 `;
 
+const LevelLabel = styled.p`
+  font-size: 0.8em;
+  color: #4E5F69;
+`;
+
 export class Skill extends Component {
   render() {
     const { 
-      name, logoSrc,
+      name, logoSrc, level,
       title, details
     } = this.props
     return (
       <Container>
+        <LevelContainer>
+          <LevelLabel>{level}</LevelLabel>
+        </LevelContainer>
         <SkillContainer>
           <SkillIcon src={logoSrc}></SkillIcon>
           <SkillLabel>{name}</SkillLabel>
@@ -84,6 +109,7 @@ export class Skill extends Component {
 Skill.propTypes = {
   name: PropTypes.string.isRequired,
   logoSrc: PropTypes.string.isRequired,
+  level: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   details: PropTypes.arrayOf(PropTypes.string).isRequired
 };

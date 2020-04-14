@@ -18,7 +18,8 @@ export default {
 export const android = () => (
   <Skill 
     name="Android" logoSrc={ic_android}
-    title="Native Java/Kotlin"
+    level="Intermediate"
+    title="Native Java/Kotlin" 
     details={["IDE: Android Studio", 
     "Libraries Used: Dagger, Retrofit, RxJava, Gson",
     "Architecture - MVP, MVVM, Clean Architecture",
