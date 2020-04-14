@@ -26,6 +26,7 @@ const SkillContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
+  margin-right: 1em;
   display: flex;
   flex-direction: column;
 `;
