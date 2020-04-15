@@ -8,6 +8,7 @@ import CustomizedParticles from './components/ui_library/CustomizedParticles';
 import Header from './components/sections/header/Header';
 import Home from './components/sections/home/Home';
 import SkillsSection from './components/sections/skills/SkillsSection';
+import AboutSection from './components/sections/about/AboutSection';
 import Contact from './components/sections/contact/Contact';
 import Footer from './components/sections/footer/Footer';
 
@@ -85,9 +86,7 @@ export class App extends Component {
           <h1>Quote</h1>
         </div>
         {/* About */}
-        <div>
-          <h1>About</h1>
-        </div>
+        <AboutSection/>
         {/* Contact */}
         <Contact/>
         {/* Footer */}
