@@ -9,6 +9,7 @@ import Header from './components/sections/header/Header';
 import Home from './components/sections/home/Home';
 import ProjectsSection from './components/sections/projects/ProjectsSection';
 import SkillsSection from './components/sections/skills/SkillsSection';
+import QuotationSection from './components/sections/quotation/QuotationSection';
 import AboutSection from './components/sections/about/AboutSection';
 import Contact from './components/sections/contact/Contact';
 import Footer from './components/sections/footer/Footer';
@@ -79,9 +80,7 @@ export class App extends Component {
         {/* Skills */}
         <SkillsSection/>
         {/* Quote */}
-        <div>
-          <h1>Quote</h1>
-        </div>
+        <QuotationSection/>
         {/* About */}
         <AboutSection/>
         {/* Contact */}
