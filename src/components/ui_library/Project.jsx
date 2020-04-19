@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import '../../App.css'
+import '../../App.css';
+import ProjectFeature from '../ui_library/ProjectFeature';
 
 const Container = styled.div`
    display: flex;
@@ -20,7 +21,10 @@ const InfoContainer = styled.div`
 `;
 
 const MainFeaturesContainer = styled.div`
-  background-color: green;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 1.5rem;
 `;
 
 const RoleContainer = styled.div`
@@ -66,7 +70,10 @@ export class Project extends Component {
             </RoleContainer>
           </InfoContainer>
           <MainFeaturesContainer>
-            <h1>Hello</h1>
+            <ProjectFeature name="Loyalty and Rewards"/>
+            <ProjectFeature name="Indoor Map"/>
+            <ProjectFeature name="Cinema Booking"/>
+            <ProjectFeature name="Mall Information"/>
           </MainFeaturesContainer>
         </DetailsContainer>
       </Container>
