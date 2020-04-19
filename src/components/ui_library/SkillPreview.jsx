@@ -36,7 +36,7 @@ const SkillLabel = styled.h4`
 
 export class SkillPreview extends Component {
   render() {
-    const { name, logoSrc } = this.props
+    const { name, logoSrc } = this.props;
     // const maxWidthHeight = "10em";
     // const minWidthHeight = "10em";
     return (
