@@ -49,7 +49,6 @@ const PlatformItem = styled.li`
 `;
 
 const RoleContainer = styled.div`
-  height: 5rem;
   padding-left: 0.8rem;
 
   border-left-style: solid;
