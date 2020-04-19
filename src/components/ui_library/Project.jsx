@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import '../../App.css';
 import ProjectFeature from '../ui_library/ProjectFeature';
+import ProjectPlatform from '../ui_library/ProjectPlatform';
+
+import '../../App.css';
+import ic_android from '../../images/ic_android.svg';
+import ic_ios from '../../images/ic_ios.svg';
+import ic_web from '../../images/ic_web.svg';
+import ic_backend from '../../images/ic_backend.svg';
+
 
 const Container = styled.div`
    display: flex;
@@ -15,16 +22,30 @@ const DetailsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
+  grid-column-gap: 15%;
 `;
 
 const InfoContainer = styled.div`
 `;
 
-const MainFeaturesContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-row-gap: 1.5rem;
+const FeatureList = styled.ul`
+  display: flex;
+  flex-direction: column;
+`;
+
+const FeatureItem = styled.li`
+  margin-bottom: 1.5rem;
+`;
+
+const PlatformList = styled.ul`
+  margin-top: 4rem;
+
+  display: flex;
+  flex-direction: row;
+`;
+
+const PlatformItem = styled.li`
+  margin-right: 1.5rem;
 `;
 
 const RoleContainer = styled.div`
@@ -57,6 +78,20 @@ const DevelopedLabel = styled.h2`
   font-size: 1.5em;
 `;
 
+const ProjectDescription = styled.p`
+  margin-top: 1.3rem;
+
+  color: #4E5F69;
+  font-size: 1.2em;
+`;
+
+const InvolvementDescription = styled.p`
+  margin-top: 2rem;
+  
+  color: #A7ADB1;
+  font-size: 1.2em;
+`;
+
 export class Project extends Component {
   render() {
     return (
@@ -68,13 +103,23 @@ export class Project extends Component {
               <RoleLabel>Role: Team Captain, iOS Developer, Backend Developer</RoleLabel>
               <DevelopedLabel>Developed at White Cloak Technologies, Inc.</DevelopedLabel>
             </RoleContainer>
+            <PlatformList>
+              <PlatformItem><ProjectPlatform name="iOS" logoSrc={ic_ios}/></PlatformItem>
+              <PlatformItem><ProjectPlatform name="Android" logoSrc={ic_android}/></PlatformItem>
+              <PlatformItem><ProjectPlatform name="Web" logoSrc={ic_web}/></PlatformItem>
+              <PlatformItem><ProjectPlatform name="Backend" logoSrc={ic_backend}/></PlatformItem>
+            </PlatformList>
+            <ProjectDescription>
+              Z!ng is Ayala Malls’ mobile app that includes indoor navigation, cinema booking, offers, promos, and rewards. Z!ng is Ayala Malls’ mobile app that includes indoor navigation, cinema booking, offers, promos, and rewards.
+            </ProjectDescription>
+            <InvolvementDescription>Involvement: January 2019 - May 2020</InvolvementDescription>
           </InfoContainer>
-          <MainFeaturesContainer>
-            <ProjectFeature name="Loyalty and Rewards"/>
-            <ProjectFeature name="Indoor Map"/>
-            <ProjectFeature name="Cinema Booking"/>
-            <ProjectFeature name="Mall Information"/>
-          </MainFeaturesContainer>
+          <FeatureList>
+            <FeatureItem><ProjectFeature name="Loyalty and Rewards"/></FeatureItem>
+            <FeatureItem><ProjectFeature name="Indoor Map"/></FeatureItem>
+            <FeatureItem><ProjectFeature name="Cinema Booking"/></FeatureItem>
+            <FeatureItem><ProjectFeature name="Mall Information"/></FeatureItem>
+          </FeatureList>
         </DetailsContainer>
       </Container>
     )
