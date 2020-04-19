@@ -7,6 +7,7 @@ import { device } from './helpers/MediaQueryHelper';
 import CustomizedParticles from './components/ui_library/CustomizedParticles';
 import Header from './components/sections/header/Header';
 import Home from './components/sections/home/Home';
+import ProjectsSection from './components/sections/projects/ProjectsSection';
 import SkillsSection from './components/sections/skills/SkillsSection';
 import AboutSection from './components/sections/about/AboutSection';
 import Contact from './components/sections/contact/Contact';
@@ -74,13 +75,9 @@ export class App extends Component {
           <HomeContainer><Home/></HomeContainer>
         </HeaderHomeContainer>
         {/* Projects */}
-        <div>
-          <h1>Projects</h1>
-        </div>
+        <ProjectsSection/>
         {/* Skills */}
-        <div>
-          <SkillsSection/>
-        </div>
+        <SkillsSection/>
         {/* Quote */}
         <div>
           <h1>Quote</h1>
