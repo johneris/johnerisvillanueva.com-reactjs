@@ -3,8 +3,6 @@ import styled from 'styled-components'
 
 import Skill from '../../ui_library/Skill';
 
-import ic_android from '../../../images/ic_android.svg';
-
 const Container = styled.div`
   width: 100%;
   background-color: #1B262C;
@@ -46,7 +44,7 @@ export class SkillsSection extends Component {
           <TitleLabel>Tech Stack</TitleLabel>
           <SkillsContainer>
             <Skill 
-              name="Android" logoSrc={ic_android}
+              name="Android" logoSrc="/images/ic_android.svg"
               level="Intermediate"
               title="Native Java/Kotlin" 
               details={["IDE: Android Studio", 
@@ -55,7 +53,7 @@ export class SkillsSection extends Component {
               "Others: Play Store Deployment"]}
             />
             <Skill 
-              name="Android" logoSrc={ic_android}
+              name="Android" logoSrc="/images/ic_android.svg"
               level="Intermediate"
               title="Native Java/Kotlin" 
               details={["IDE: Android Studio", 
@@ -64,7 +62,7 @@ export class SkillsSection extends Component {
               "Others: Play Store Deployment"]}
             />
             <Skill 
-              name="Android" logoSrc={ic_android}
+              name="Android" logoSrc="/images/ic_android.svg"
               level="Intermediate"
               title="Native Java/Kotlin" 
               details={["IDE: Android Studio", 
@@ -73,7 +71,7 @@ export class SkillsSection extends Component {
               "Others: Play Store Deployment"]}
             />
             <Skill 
-              name="Android" logoSrc={ic_android}
+              name="Android" logoSrc="/images/ic_android.svg"
               level="Intermediate"
               title="Native Java/Kotlin" 
               details={["IDE: Android Studio", 

@@ -4,12 +4,6 @@ import styled from 'styled-components';
 import ProjectFeature from '../ui_library/ProjectFeature';
 import ProjectPlatform from '../ui_library/ProjectPlatform';
 
-import '../../App.css';
-import ic_android from '../../images/ic_android.svg';
-import ic_ios from '../../images/ic_ios.svg';
-import ic_web from '../../images/ic_web.svg';
-import ic_backend from '../../images/ic_backend.svg';
-
 
 const Container = styled.div`
    display: flex;
@@ -103,10 +97,10 @@ export class Project extends Component {
               <DevelopedLabel>Developed at White Cloak Technologies, Inc.</DevelopedLabel>
             </RoleContainer>
             <PlatformList>
-              <PlatformItem><ProjectPlatform name="iOS" logoSrc={ic_ios}/></PlatformItem>
-              <PlatformItem><ProjectPlatform name="Android" logoSrc={ic_android}/></PlatformItem>
-              <PlatformItem><ProjectPlatform name="Web" logoSrc={ic_web}/></PlatformItem>
-              <PlatformItem><ProjectPlatform name="Backend" logoSrc={ic_backend}/></PlatformItem>
+              <PlatformItem><ProjectPlatform name="iOS" logoSrc="/images/ic_ios.svg"/></PlatformItem>
+              <PlatformItem><ProjectPlatform name="Android" logoSrc="/images/ic_android.svg"/></PlatformItem>
+              <PlatformItem><ProjectPlatform name="Web" logoSrc="/images/ic_web.svg"/></PlatformItem>
+              <PlatformItem><ProjectPlatform name="Backend" logoSrc="/images/ic_backend.svg"/></PlatformItem>
             </PlatformList>
             <ProjectDescription>
               Z!ng is Ayala Malls’ mobile app that includes indoor navigation, cinema booking, offers, promos, and rewards. Z!ng is Ayala Malls’ mobile app that includes indoor navigation, cinema booking, offers, promos, and rewards.

@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 
-import ic_logo from '../../../images/ic_logo.svg';
-
 const Container = styled.footer`
   width: 100%;
 
@@ -70,7 +68,7 @@ export class Footer extends Component {
         <Wrapper>
           <InfoContainer>
             <LogoWebsiteContainer>
-              <LogoImage src={ic_logo}/>
+              <LogoImage src="/images/ic_logo.svg"/>
               <Info>johnerisvillanueva.com</Info>
             </LogoWebsiteContainer>
             <InfoSectionContainer>

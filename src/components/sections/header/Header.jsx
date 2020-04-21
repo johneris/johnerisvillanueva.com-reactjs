@@ -4,11 +4,6 @@ import styled from 'styled-components';
 
 import { device } from '../../../helpers/MediaQueryHelper';
 
-import '../../../App.css';
-import ic_logo from '../../../images/ic_logo.svg';
-import ic_menu from '../../../images/ic_menu_24px.svg';
-import ic_close from '../../../images/ic_close_24px.svg';
-
 const Container = styled.nav`
   height: ${props => {
     return props.height;
@@ -166,7 +161,7 @@ export class Header extends Component {
     return (
       <Container height={this.props.height}>
         <Wrapper>
-          <LeftSideContainer><LogoImage src={ic_logo} alt="logo"/></LeftSideContainer>
+          <LeftSideContainer><LogoImage src="/images/ic_logo.svg" alt="logo"/></LeftSideContainer>
           <NavListContainer isOpen={this.state.isResponsiveNavOpen}>
             <NavList>
               <NavListItem><NavListItemLink href="#">Home</NavListItemLink></NavListItem>
@@ -177,10 +172,10 @@ export class Header extends Component {
           </NavListContainer>
           <RightSideContainer>
             <MenuButton onClick={this.openNav} isOpen={this.state.isResponsiveNavOpen}>
-              <ImageIcon src={ic_menu} alt="menu" />
+              <ImageIcon src="/images/ic_menu.svg" alt="menu" />
             </MenuButton>
             <CloseButton onClick={this.closeNav} isOpen={this.state.isResponsiveNavOpen}>
-              <ImageIcon src={ic_close} alt="close menu" />
+              <ImageIcon src="/images/ic_close.svg" alt="close menu" />
             </CloseButton>
           </RightSideContainer>
         </Wrapper>

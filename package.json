@@ -6,17 +6,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "next": "^9.3.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.0.3",
     "react-scripts": "3.4.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "serve": "11.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "next",
+    "build": "next build",
+    "preexport": "yarn run build",
+    "export": "next export",
+    "prestart": "yarn run export",
+    "start": "serve out",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -40,6 +44,7 @@
     "@storybook/addon-links": "^5.3.17",
     "@storybook/addons": "^5.3.17",
     "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^5.3.17"
+    "@storybook/react": "^5.3.17",
+    "babel-plugin-styled-components": "^1.8.0"
   }
 }

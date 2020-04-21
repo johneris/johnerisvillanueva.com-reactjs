@@ -3,10 +3,6 @@ import styled from 'styled-components';
 
 import Hobby from '../../ui_library/Hobby';
 
-import ic_run from '../../../images/ic_run.svg';
-import ic_hike from '../../../images/ic_hike.svg';
-import ic_swim from '../../../images/ic_swim.svg';
-
 const Container = styled.div`
   width: 100%;
   height: 25em;
@@ -105,9 +101,9 @@ export class AboutSection extends Component {
           <InterestsContainer>
             <InterestHeader>My hobbies and interests beside<br/>software development</InterestHeader>
             <HobbiesContainer>
-              <Hobby name="Run" logoSrc={ic_run}/>
-              <Hobby name="Hike" logoSrc={ic_hike}/>
-              <Hobby name="Swim" logoSrc={ic_swim}/>
+              <Hobby name="Run" logoSrc="/images/ic_run.svg"/>
+              <Hobby name="Hike" logoSrc="/images/ic_hike.svg"/>
+              <Hobby name="Swim" logoSrc="/images/ic_swim.svg"/>
             </HobbiesContainer>
           </InterestsContainer>
           <WhiteVerticalBar/>

@@ -7,16 +7,6 @@ import SkillPreview from '../../ui_library/SkillPreview';
 import SocialMediaLink from '../../ui_library/SocialMediaLink';
 import Button from '../../ui_library/Button';
 
-import '../../../App.css';
-import ic_android from '../../../images/ic_android.svg';
-import ic_ios from '../../../images/ic_ios.svg';
-import ic_web from '../../../images/ic_web.svg';
-import ic_backend from '../../../images/ic_backend.svg';
-import ic_linkedin from '../../../images/ic_linkedin.svg';
-import ic_github from '../../../images/ic_github.svg';
-import ic_facebook from '../../../images/ic_facebook.svg';
-import img_me from '../../../images/img_me.png';
-
 const Container = styled.div`
   height: 100%;
   width: 100%;
@@ -284,10 +274,10 @@ export class Home extends Component {
             <FullStackLabel>Full Stack Developer</FullStackLabel>
             <WebMobileLabel>Web and Mobile</WebMobileLabel>
             <SkillListContainer>
-              <SkillPreview name="Android" logoSrc={ic_android}/>
-              <SkillPreview name="iOS" logoSrc={ic_ios}/>
-              <SkillPreview name="Web" logoSrc={ic_web}/>
-              <SkillPreview name="Backend" logoSrc={ic_backend}/>
+              <SkillPreview name="Android" logoSrc="/images/ic_android.svg"/>
+              <SkillPreview name="iOS" logoSrc="/images/ic_ios.svg"/>
+              <SkillPreview name="Web" logoSrc="/images/ic_web.svg"/>
+              <SkillPreview name="Backend" logoSrc="/images/ic_backend.svg"/>
             </SkillListContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
@@ -295,16 +285,16 @@ export class Home extends Component {
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
             <SocialMediaListContainer>
               <SocialMediaList>
-                <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc={ic_linkedin} link="#"/></SocialMediaItem>
-                <SocialMediaItem><SocialMediaLink name="Github" logoSrc={ic_github} link="#"/></SocialMediaItem>
-                <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc={ic_facebook} link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc="/images/ic_linkedin.svg" link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Github" logoSrc="/images/ic_github.svg" link="#"/></SocialMediaItem>
+                <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc="/images/ic_facebook.svg" link="#"/></SocialMediaItem>
               </SocialMediaList>
             </SocialMediaListContainer>
           </ContactContainer>
           <GreetingsContainer>
             <MeBackground/>
             <GreetingsLabelContainer><GreetingsLabel>Hi, I'm Eris</GreetingsLabel></GreetingsLabelContainer>
-            <MeImage src={img_me}/>
+            <MeImage src="/images/img_me.png"/>
           </GreetingsContainer>
         </Wrapper>
       </Container>
