@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 import { device } from '../helpers/MediaQueryHelper';
 
@@ -67,29 +68,50 @@ const ParticleContainer = styled.div`
 export class App extends Component {
 
   onHomeClicked() {
-    console.log('Home clicked')
+    scroller.scrollTo('home', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
   }
 
   onProjectsClicked() {
-    console.log('Projects clicked')
+    scroller.scrollTo('projects', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
   }
 
   onSkillsClicked() {
-    console.log('Skills clicked')
+    scroller.scrollTo('skills', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
   }
 
   onAboutClicked() {
-    console.log('About clicked')
+    scroller.scrollTo('about', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
   }
 
   onContactClicked() {
-    console.log('Contact clicked')
+    scroller.scrollTo('contact', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
   }
 
   render() {
     return (
       <MainContainer>
         {/* Header and Home */}
+        <Element name="home"/>
         <HeaderHomeContainer>
           <HeaderContainer>
             <Header 
@@ -105,14 +127,18 @@ export class App extends Component {
           <HomeContainer><Home/></HomeContainer>
         </HeaderHomeContainer>
         {/* Projects */}
+        <Element name="projects"/>
         <ProjectsSection/>
         {/* Skills */}
+        <Element name="skills"/>
         <SkillsSection/>
         {/* Quote */}
         <QuotationSection/>
+        <Element name="about"/>
         {/* About */}
         <AboutSection/>
         {/* Contact */}
+        <Element name="contact"/>
         <Contact/>
         {/* Footer */}
         <Footer 
