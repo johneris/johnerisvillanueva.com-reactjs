@@ -285,9 +285,18 @@ export class Home extends Component {
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
             <SocialMediaListContainer>
               <SocialMediaList>
-                <SocialMediaItem><SocialMediaLink name="LinkedIn" logoSrc="/images/ic_linkedin.svg" link="#"/></SocialMediaItem>
-                <SocialMediaItem><SocialMediaLink name="Github" logoSrc="/images/ic_github.svg" link="#"/></SocialMediaItem>
-                <SocialMediaItem><SocialMediaLink name="Facebook" logoSrc="/images/ic_facebook.svg" link="#"/></SocialMediaItem>
+                <SocialMediaItem>
+                  <SocialMediaLink name="LinkedIn" logoSrc="/images/ic_linkedin.svg" 
+                  link="https://www.linkedin.com/in/john-eris-villanueva-838216b2/"/>
+                </SocialMediaItem>
+                <SocialMediaItem>
+                  <SocialMediaLink name="Github" logoSrc="/images/ic_github.svg" 
+                  link="https://github.com/johneris/"/>
+                </SocialMediaItem>
+                {/* <SocialMediaItem>
+                  <SocialMediaLink name="Facebook" logoSrc="/images/ic_facebook.svg" 
+                  link="https://www.facebook.com/johneris.villanueva/"/>
+                </SocialMediaItem> */}
               </SocialMediaList>
             </SocialMediaListContainer>
           </ContactContainer>

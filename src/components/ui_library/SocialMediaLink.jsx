@@ -23,7 +23,9 @@ export class SocialMediaLink extends Component {
     const { name, logoSrc, link } = this.props
     return (
       <Container>
-        <a href={link}><SocialMediaIcon src={logoSrc} alt={name}/></a>
+        <a target="_blank" rel="noopener noreferrer" href={link}>
+          <SocialMediaIcon src={logoSrc} alt={name}/>
+        </a>
       </Container>
     )
   }
