@@ -91,7 +91,16 @@ export class App extends Component {
       <MainContainer>
         {/* Header and Home */}
         <HeaderHomeContainer>
-          <HeaderContainer><Header height="4em"/></HeaderContainer>
+          <HeaderContainer>
+            <Header 
+              height="4em"
+              onHomeClicked={this.onHomeClicked}
+              onProjectsClicked={this.onProjectsClicked}
+              onSkillsClicked={this.onSkillsClicked}
+              onAboutClicked={this.onAboutClicked}
+              onContactClicked={this.onContactClicked}
+            />
+          </HeaderContainer>
           <ParticleContainer><CustomizedParticles width="100%" height="100vh"/></ParticleContainer>
           <HomeContainer><Home/></HomeContainer>
         </HeaderHomeContainer>

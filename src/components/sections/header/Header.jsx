@@ -119,10 +119,11 @@ const NavListItem = styled.li`
   }
 `;
 
-const NavListItemLink = styled.a`
+const NavListItemButton = styled.button`
   padding: 0.2em 0.4em;
   margin: 0.4em;
   color: #CCD5DB;
+  background-color: transparent;
   font-size: 1.5em;
   text-transform: lowercase;
 
@@ -130,6 +131,10 @@ const NavListItemLink = styled.a`
     background-color: #22A055;
     border-radius: 4px;
     color: white;
+  }
+
+  :focus {
+    outline: none;
   }
 `;
 
@@ -164,10 +169,11 @@ export class Header extends Component {
           <LeftSideContainer><LogoImage src="/images/ic_logo.svg" alt="logo"/></LeftSideContainer>
           <NavListContainer isOpen={this.state.isResponsiveNavOpen}>
             <NavList>
-              <NavListItem><NavListItemLink href="#">Home</NavListItemLink></NavListItem>
-              <NavListItem><NavListItemLink href="#">Projects</NavListItemLink></NavListItem>
-              <NavListItem><NavListItemLink href="#">About</NavListItemLink></NavListItem>
-              <NavListItem><NavListItemLink href="#">Contact</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.props.onHomeClicked}>Home</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.props.onProjectsClicked}>Projects</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.props.onSkillsClicked}>Skills</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.props.onAboutClicked}>About</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.props.onContactClicked}>Contact</NavListItemButton></NavListItem>
             </NavList>
           </NavListContainer>
           <RightSideContainer>
