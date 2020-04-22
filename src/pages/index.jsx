@@ -65,6 +65,27 @@ const ParticleContainer = styled.div`
 `;
 
 export class App extends Component {
+
+  onHomeClicked() {
+    console.log('Home clicked')
+  }
+
+  onProjectsClicked() {
+    console.log('Projects clicked')
+  }
+
+  onSkillsClicked() {
+    console.log('Skills clicked')
+  }
+
+  onAboutClicked() {
+    console.log('About clicked')
+  }
+
+  onContactClicked() {
+    console.log('Contact clicked')
+  }
+
   render() {
     return (
       <MainContainer>
@@ -85,7 +106,13 @@ export class App extends Component {
         {/* Contact */}
         <Contact/>
         {/* Footer */}
-        <Footer/>
+        <Footer 
+          onHomeClicked={this.onHomeClicked}
+          onProjectsClicked={this.onProjectsClicked}
+          onSkillsClicked={this.onSkillsClicked}
+          onAboutClicked={this.onAboutClicked}
+          onContactClicked={this.onContactClicked}
+        />
       </MainContainer>
     )
   }

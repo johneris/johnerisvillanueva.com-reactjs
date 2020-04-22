@@ -53,12 +53,17 @@ const SectionLabel = styled.p`
   color: #E1E2E7;
 `;
 
-const SectionLink = styled.a`
+const SectionButton = styled.button`
   margin-top: 1em;
   font-size: 1em;
   color: #E1E2E7;
+  background-color: transparent;
   text-decoration: underline;
   text-transform: lowercase;
+
+  :focus {
+    outline: none;
+  }
 `;
 
 export class Footer extends Component {
@@ -85,11 +90,11 @@ export class Footer extends Component {
           </InfoContainer>
           <SectionsContainer>
             <SectionLabel>Section</SectionLabel>
-            <SectionLink href="#">Home</SectionLink>
-            <SectionLink href="#">Projects</SectionLink>
-            <SectionLink href="#">Skills</SectionLink>
-            <SectionLink href="#">About</SectionLink>
-            <SectionLink href="#">Contact</SectionLink>
+            <SectionButton onClick={this.props.onHomeClicked}>Home</SectionButton>
+            <SectionButton onClick={this.props.onProjectsClicked}>Projects</SectionButton>
+            <SectionButton onClick={this.props.onSkillsClicked}>Skills</SectionButton>
+            <SectionButton onClick={this.props.onAboutClicked}>About</SectionButton>
+            <SectionButton onClick={this.props.onContactClicked}>Contact</SectionButton>
           </SectionsContainer>
         </Wrapper>
       </Container>
