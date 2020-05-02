@@ -24,8 +24,8 @@ const HeaderHomeContainer = styled.div`
   width: 100%;
   background-color: #1B262C;
 
-  @media ${device.lowerThanLaptopL} {
-    height: calc(100vh + 38em);
+  @media ${device.lowerThanLaptop} {
+    height: calc(100vh + 35rem);
 
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@ const HeaderContainer = styled.div`
   position: relative;
   z-index: 3;
 
-  @media ${device.lowerThanLaptopL} { 
+  @media ${device.lowerThanLaptop} { 
     position: static;
   }
 `;
@@ -50,7 +50,7 @@ const HomeContainer = styled.div`
   left: 0;
   z-index: 2;
 
-  @media ${device.lowerThanLaptopL} { 
+  @media ${device.lowerThanLaptop} { 
     position: static;
   }
 `;
@@ -134,8 +134,8 @@ export class App extends Component {
         <SkillsSection/>
         {/* Quote */}
         <QuotationSection/>
-        <Element name="about"/>
         {/* About */}
+        <Element name="about"/>
         <AboutSection/>
         {/* Contact */}
         <Element name="contact"/>

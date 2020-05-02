@@ -41,7 +41,7 @@ const RightSideContainer = styled.div`
 
   visibility: hidden;
 
-  @media ${device.lowerThanLaptopL} { 
+  @media ${device.lowerThanLaptop} { 
     visibility: visible;
   }
 `;
@@ -50,7 +50,7 @@ const LogoImage = styled.img`
   height: 1.75em;
   margin-top: 0.4em;
 
-  @media ${device.lowerThanLaptopL} { 
+  @media ${device.lowerThanLaptop} { 
     margin-top: 0;
   }
 `;
@@ -79,7 +79,7 @@ const ImageIcon = styled.img`
 `;
 
 const NavListContainer = styled.div`
-  @media ${device.lowerThanLaptopL} { 
+  @media ${device.lowerThanLaptop} { 
     width: 100%;
     height: 100vh;
     
@@ -106,14 +106,14 @@ const NavList = styled.ul`
   align-items: center;
   justify-content: center;
 
-  @media ${device.lowerThanLaptopL} { 
+  @media ${device.lowerThanLaptop} { 
     height: 100%;
     flex-direction: column;
   } 
 `;
 
 const NavListItem = styled.li`
-  @media ${device.lowerThanLaptopL} {
+  @media ${device.lowerThanLaptop} {
     margin-top: 1em;
     margin-bottom: 1em;
   }

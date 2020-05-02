@@ -6,11 +6,11 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  max-width: 10em;
-  max-height: 10em;
+  max-width: 10rem;
+  max-height: 10rem;
 
-  min-width: 7em;
-  min-height: 7em;
+  min-width: 7rem;
+  min-height: 7rem;
   
   border-style: solid;
   border-color: #90B7CC;

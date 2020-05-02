@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { device } from '../../../helpers/MediaQueryHelper';
+
 import SkillPreview from '../../ui_library/skill_preview/SkillPreview';
 import SocialMediaLink from '../../ui_library/social_media_link/SocialMediaLink';
 import Button from '../../ui_library/button/Button';
@@ -9,7 +11,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
 
-  @media (max-width: 1439px) { 
+  @media ${device.lowerThanLaptop} {
     height: auto;
   }
 `;
@@ -24,25 +26,24 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto;
-  grid-column-gap: 2em;
+  grid-column-gap: 4em;
   justify-content: space-between;
   align-content: center;
 
-  @media (max-width: 1439px) {
+  @media ${device.lowerThanLaptop} {
     width: 80%;
     margin-right: auto;
 
     grid-template-columns: 100%;
-    grid-template-rows: repeat(2, calc((100vh - 4em)/2)) 38em;
-    grid-column-gap: 2em;
+    grid-template-rows: repeat(2, calc((100vh - 4rem)/2)) 35em;
   }
 
-  @media (max-width: 767px) {
-    grid-template-rows: calc((100vh - 4em) * 0.75) calc((100vh - 4em) * 0.25) 38em;
+  @media ${device.lowerThanTablet} {
+    grid-template-rows: calc((100vh - 4em) * 0.75) calc((100vh - 4em) * 0.25) 35em;
   }
 
-  @media (max-width: 424px) {
-    grid-template-rows: calc((100vh - 4em) * 0.6) calc((100vh - 4em) * 0.4) 38em;
+  @media ${device.lowerThanMobileL} {
+    grid-template-rows: calc((100vh - 4em) * 0.6) calc((100vh - 4em) * 0.4) 35em;
   }
 `;
 
@@ -55,14 +56,14 @@ const HeadingSkillsContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   
-  @media (max-width: 1439px) {
+  @media ${device.lowerThanLaptop} {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     
     justify-content: flex-end;
   }
 
-  @media (max-width: 767px) {
+  @media ${device.lowerThanTablet} {
     justify-content: center;
     align-items: center;
   }
@@ -76,21 +77,22 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-top: 0;
+  padding-top: 4rem;
 
-  @media (max-width: 1439px) {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-
-    justify-content: flex-start;
-    padding-top: 4em;
+  @media (max-width: 1160px) {
+    padding-top: 2rem;
   }
 
-  @media (max-width: 767px) {
+  @media ${device.lowerThanLaptop} {
+    padding-top: 4rem;
+    justify-content: flex-start;
+  }
+
+  @media ${device.lowerThanTablet} {
     padding-top: 1em;
   }
 
-  @media (max-width: 424px) {
+  @media ${device.lowerThanMobileL} {
     justify-content: center;
   }
 `;
@@ -99,14 +101,14 @@ const GreetingsContainer = styled.div`
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
 
-  @media (max-width: 1439px) { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media ${device.lowerThanLaptop} {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
   }
 `;
 
@@ -114,11 +116,19 @@ const SoftwareDevLabel = styled.h2`
   color: #FFFFFF;
   font-size: 2em;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1160px) {
+    font-size: 1.2em;
+  }
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 2em;
+  }
+
+  @media ${device.lowerThanTablet} {
     font-size: 1.5em;
   }
 
-  @media (max-width: 424px) {
+  @media ${device.lowerThanMobileL} {
     font-size: 1em;
   }
 `;
@@ -126,25 +136,38 @@ const SoftwareDevLabel = styled.h2`
 const WebMobileLabel = styled.h1`
   color: #FFFFFF;
   font-size: 4em;
-  
-  @media (max-width: 767px) {
+  white-space: nowrap;
+
+  @media (max-width: 1160px) {
+    font-size: 3.2em;
+  }
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 4em;
+  }
+
+  @media ${device.lowerThanTablet} {
     font-size: 2.5em;
   }
 
-  @media (max-width: 424px) {
+  @media ${device.lowerThanMobileL} {
     font-size: 1.5em;
   }
 `;
 
 const SkillListContainer = styled.div`
-  margin-top: 2.8em;
+  margin-top: 2.8rem;
 
   display: grid;
   grid-template-columns: repeat(4, minmax(7em, 10em));
   grid-template-rows: 10em;
   grid-column-gap: 1em;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1160px) {
+    margin-top: 2rem;
+  }
+
+  @media ${device.lowerThanTablet} {
     margin-top: 1.5em;
 
     grid-template-columns: repeat(2, minmax(7em, 10em));
@@ -153,7 +176,7 @@ const SkillListContainer = styled.div`
     grid-row-gap: 2em;
   }
 
-  @media (max-width: 424px) {
+  @media ${device.lowerThanMobileL} {
     margin-top: 1em;
 
     grid-template-columns: repeat(2, minmax(7em, 8em));
@@ -168,7 +191,15 @@ const EmailLabel = styled.p`
   color: #CCD5DB;
   font-size: 1.5em;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1160px) {
+    font-size: 1em;
+  }
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 1.5em;
+  }
+
+  @media ${device.lowerThanTablet} {
     font-size: 1em;
   }
 `;
@@ -197,35 +228,48 @@ const MeBackground = styled.div`
 
   position: absolute;
   top: 0;
-  right: 9.7em;
+  right: 9em;
   z-index: 1;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1250px) {
+    width: 23%;
+    right: 11%;
+  }
+
+  @media (max-width: 1200px) {
+    width: 21%;
+    right: 11%;
+  }
+
+  @media (max-width: 1150px) {
+    width: 19%;
+    right: 11%;
+  }
+
+  @media (max-width: 1100px) {
+    width: 17%;
+    right: 11%;
+  }
+
+  @media ${device.lowerThanLaptop} { 
     display: none;
   }
 `
 
 const MeImage = styled.img`
-  width: auto;
-  height: 38em;
+  max-width: 35rem;
 
   position: relative;
   z-index: 2;
 
-  @media (max-width: 1439px) {
-    height: auto;
-
-    position: static;
-    margin-bottom: 3em;
-  }
-
-  @media (max-width: 767px) {
-    width: 22em;
-    margin-bottom: 0;
-  }
-
-  @media (max-width: 424px) {
+  @media (max-width: 1350px) {
     width: 100%;
+  }
+
+  @media ${device.lowerThanLaptop} { 
+    width: auto;
+    max-height: 25rem;
+    max-width: 95%;
   }
 `
 
@@ -234,14 +278,14 @@ const GreetingsLabelContainer = styled.div`
   width: 10em;
 
   position: relative;
-  top: 2.8em;
-  left: 12em;
+  top: 2em;
+  left: -1em;
   z-index: 3;
 
   display: flex;
   justify-content: center;
 
-  @media (max-width: 1439px) { 
+  @media ${device.lowerThanLaptop} { 
     height: auto;
     width: auto;
 
@@ -254,12 +298,8 @@ const GreetingsLabel = styled.div`
   color: #CCD5DB;
   font-size: 1.5em;
 
-  @media (max-width: 1439px) { 
-    font-size: 2em;
-  }
-
-  @media (max-width: 767px) {
-    font-size: 1.5em;
+  @media (max-width: 1160px) {
+    font-size: 1em;
   }
 `;
 
