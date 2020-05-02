@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import NavIconButton from "../components/ui_library/NavIconButton";
+import NavIconButton from "./NavIconButton";
 
 export default {
   title: 'NavIconButton',

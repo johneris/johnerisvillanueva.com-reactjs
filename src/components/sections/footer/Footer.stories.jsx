@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import Footer from "../components/sections/footer/Footer";
+import Footer from "./Footer";
 
 export default {
   title: 'Footer',

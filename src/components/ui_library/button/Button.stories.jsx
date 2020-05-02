@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import Button from "../components/ui_library/Button";
+import Button from "./Button";
 
 export default {
   title: 'Button',

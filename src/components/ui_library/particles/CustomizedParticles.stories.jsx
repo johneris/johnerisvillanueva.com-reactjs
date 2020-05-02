@@ -1,11 +1,11 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import Home from "../components/sections/home/Home";
+import CustomizedParticles from "./CustomizedParticles";
 
 export default {
-  title: 'Home',
-  component: Home,
+  title: 'CustomizedParticles',
+  component: CustomizedParticles,
   decorators: [storyFn => <div style={{ 
     backgroundColor: '#1B262C', 
     height: "100%",
@@ -14,5 +14,5 @@ export default {
 };
 
 export const Default = () => (
-  <Home/>
+  <CustomizedParticles/>
 );

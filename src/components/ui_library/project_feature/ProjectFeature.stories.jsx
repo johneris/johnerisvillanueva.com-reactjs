@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import ProjectFeature from "../components/ui_library/ProjectFeature";
+import ProjectFeature from "./ProjectFeature";
 
 export default {
   title: 'ProjectFeature',

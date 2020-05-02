@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import Project from '../../ui_library/Project';
-import NavIconButton from '../../ui_library/NavIconButton';
+import Project from '../../ui_library/project/Project';
+import NavIconButton from '../../ui_library/nav_icon_button/NavIconButton';
 
 const Container = styled.div`
   width: 100%;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import Hobby from '../../ui_library/Hobby';
+import Hobby from '../../ui_library/hobby/Hobby';
 
 const Container = styled.div`
   width: 100%;

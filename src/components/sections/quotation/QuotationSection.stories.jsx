@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import QuotationSection from "../components/sections/quotation/QuotationSection";
+import QuotationSection from "./QuotationSection";
 
 export default {
   title: 'QuotationSection',

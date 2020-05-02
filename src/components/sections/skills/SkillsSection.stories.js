@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import SkillsSection from "../components/sections/skills/SkillsSection";
+import SkillsSection from "./SkillsSection";
 
 export default {
   title: 'SkillsSection',

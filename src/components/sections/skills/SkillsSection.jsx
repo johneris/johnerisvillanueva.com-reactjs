@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import Skill from '../../ui_library/Skill';
+import Skill from '../../ui_library/skill/Skill';
 
 const Container = styled.div`
   width: 100%;

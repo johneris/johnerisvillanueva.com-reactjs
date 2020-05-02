@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import ProjectsSection from "../components/sections/projects/ProjectsSection";
+import ProjectsSection from "./ProjectsSection";
 
 export default {
   title: 'ProjectsSection',

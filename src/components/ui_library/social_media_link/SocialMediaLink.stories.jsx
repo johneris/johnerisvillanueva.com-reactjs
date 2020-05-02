@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import SocialMediaLink from '../components/ui_library/SocialMediaLink';
+import SocialMediaLink from './SocialMediaLink';
 
 export default {
   title: 'SocialMediaLink',

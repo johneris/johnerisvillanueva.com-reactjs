@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { device } from '../../../helpers/MediaQueryHelper';
-
-import SkillPreview from '../../ui_library/SkillPreview';
-import SocialMediaLink from '../../ui_library/SocialMediaLink';
-import Button from '../../ui_library/Button';
+import SkillPreview from '../../ui_library/skill_preview/SkillPreview';
+import SocialMediaLink from '../../ui_library/social_media_link/SocialMediaLink';
+import Button from '../../ui_library/button/Button';
 
 const Container = styled.div`
   height: 100%;
@@ -112,7 +110,7 @@ const GreetingsContainer = styled.div`
   }
 `;
 
-const FullStackLabel = styled.h2`
+const SoftwareDevLabel = styled.h2`
   color: #FFFFFF;
   font-size: 2em;
 
@@ -271,7 +269,7 @@ export class Home extends Component {
       <Container>
         <Wrapper>
           <HeadingSkillsContainer>
-            <FullStackLabel>Full Stack Developer</FullStackLabel>
+            <SoftwareDevLabel>Software Developer</SoftwareDevLabel>
             <WebMobileLabel>Web and Mobile</WebMobileLabel>
             <SkillListContainer>
               <SkillPreview name="Android" logoSrc="/images/ic_android.svg"/>

@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import Hobby from '../components/ui_library/Hobby';
+import Hobby from "./Hobby";
 
 export default {
   title: 'Hobby',

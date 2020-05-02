@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import AboutSection from "../components/sections/about/AboutSection";
+import AboutSection from "./AboutSection";
 
 export default {
   title: 'AboutSection',

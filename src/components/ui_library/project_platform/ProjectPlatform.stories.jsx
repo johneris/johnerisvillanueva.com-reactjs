@@ -1,38 +1,33 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import SkillPreview from '../components/ui_library/SkillPreview';
+import ProjectPlatform from './ProjectPlatform';
 
 export default {
-  title: 'SkillPreview',
-  component: SkillPreview,
-  decorators: [storyFn => <div style={{ 
-    backgroundColor: '#1B262C', 
-    height: "100%",
-    width: "100%"
-  }}>{storyFn()}</div>]
+  title: 'ProjectPlatform',
+  component: ProjectPlatform
 };
 
 export const android = () => (
-  <SkillPreview 
+  <ProjectPlatform 
     name="Android" logoSrc='/images/ic_android.svg'
   />
 );
 
 export const iOS = () => (
-  <SkillPreview 
+  <ProjectPlatform 
     name="iOS" logoSrc='/images/ic_ios.svg'
   />
 );
 
 export const web = () => (
-  <SkillPreview 
+  <ProjectPlatform 
     name="Web" logoSrc='/images/ic_web.svg'
   />
 );
 
 export const backend = () => (
-  <SkillPreview 
+  <ProjectPlatform 
     name="Backend" logoSrc='/images/ic_backend.svg'
   />
 );

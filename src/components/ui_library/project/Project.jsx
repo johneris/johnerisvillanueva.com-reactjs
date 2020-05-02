@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import ProjectFeature from '../ui_library/ProjectFeature';
-import ProjectPlatform from '../ui_library/ProjectPlatform';
+import ProjectFeature from '../project_feature/ProjectFeature';
+import ProjectPlatform from '../project_platform/ProjectPlatform';
 
 
 const Container = styled.div`

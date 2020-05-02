@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import Project from "../components/ui_library/Project";
+import Project from "./Project";
 
 export default {
   title: 'Project',

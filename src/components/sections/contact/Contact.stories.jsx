@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../../styles/styles.css';
 
-import Contact from "../components/sections/contact/Contact";
+import Contact from "./Contact";
 
 export default {
   title: 'Contact',
