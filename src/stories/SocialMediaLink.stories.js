@@ -3,8 +3,6 @@ import '../App.css';
 
 import SocialMediaLink from '../components/ui_library/SocialMediaLink';
 
-import ic_linkedin from '../images/ic_linkedin.svg';
-
 export default {
   title: 'SocialMediaLink',
   component: SocialMediaLink,
@@ -17,7 +15,7 @@ export default {
 
 export const linkedin = () => (
   <SocialMediaLink 
-    name="LinkedIn" logoSrc={ic_linkedin}
+    name="LinkedIn" logoSrc='/images/ic_linkedin.svg'
     link="https://linkedin.com"
   />
 );

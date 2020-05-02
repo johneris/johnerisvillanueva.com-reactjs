@@ -3,11 +3,6 @@ import '../App.css';
 
 import ProjectPlatform from '../components/ui_library/ProjectPlatform';
 
-import ic_android from '../images/ic_android.svg';
-import ic_ios from '../images/ic_ios.svg';
-import ic_web from '../images/ic_web.svg';
-import ic_backend from '../images/ic_backend.svg';
-
 export default {
   title: 'ProjectPlatform',
   component: ProjectPlatform
@@ -15,24 +10,24 @@ export default {
 
 export const android = () => (
   <ProjectPlatform 
-    name="Android" logoSrc={ic_android}
+    name="Android" logoSrc='/images/ic_android.svg'
   />
 );
 
 export const iOS = () => (
   <ProjectPlatform 
-    name="iOS" logoSrc={ic_ios}
+    name="iOS" logoSrc='/images/ic_ios.svg'
   />
 );
 
 export const web = () => (
   <ProjectPlatform 
-    name="Web" logoSrc={ic_web}
+    name="Web" logoSrc='/images/ic_web.svg'
   />
 );
 
 export const backend = () => (
   <ProjectPlatform 
-    name="Backend" logoSrc={ic_backend}
+    name="Backend" logoSrc='/images/ic_backend.svg'
   />
 );

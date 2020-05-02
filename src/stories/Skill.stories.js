@@ -3,8 +3,6 @@ import '../App.css';
 
 import Skill from '../components/ui_library/Skill';
 
-import ic_android from '../images/ic_android.svg';
-
 export default {
   title: 'Skill',
   component: Skill,
@@ -17,7 +15,7 @@ export default {
 
 export const android = () => (
   <Skill 
-    name="Android" logoSrc={ic_android}
+    name="Android" logoSrc='/images/ic_android.svg'
     level="Intermediate"
     title="Native Java/Kotlin" 
     details={["IDE: Android Studio", 

@@ -3,10 +3,6 @@ import '../App.css';
 
 import Hobby from '../components/ui_library/Hobby';
 
-import ic_run from '../images/ic_run.svg';
-import ic_hike from '../images/ic_hike.svg';
-import ic_swim from '../images/ic_swim.svg';
-
 export default {
   title: 'Hobby',
   component: Hobby,
@@ -19,18 +15,18 @@ export default {
 
 export const run = () => (
   <Hobby 
-    name="Run" logoSrc={ic_run}
+    name="Run" logoSrc='/images/ic_run.svg'
   />
 );
 
 export const hike = () => (
   <Hobby 
-    name="Hike" logoSrc={ic_hike}
+    name="Hike" logoSrc='/images/ic_hike.svg'
   />
 );
 
 export const web = () => (
   <Hobby 
-    name="Swim" logoSrc={ic_swim}
+    name="Swim" logoSrc='/images/ic_swim.svg'
   />
 );

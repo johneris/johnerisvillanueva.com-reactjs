@@ -3,11 +3,6 @@ import '../App.css';
 
 import SkillPreview from '../components/ui_library/SkillPreview';
 
-import ic_android from '../images/ic_android.svg';
-import ic_ios from '../images/ic_ios.svg';
-import ic_web from '../images/ic_web.svg';
-import ic_backend from '../images/ic_backend.svg';
-
 export default {
   title: 'SkillPreview',
   component: SkillPreview,
@@ -20,24 +15,24 @@ export default {
 
 export const android = () => (
   <SkillPreview 
-    name="Android" logoSrc={ic_android}
+    name="Android" logoSrc='/images/ic_android.svg'
   />
 );
 
 export const iOS = () => (
   <SkillPreview 
-    name="iOS" logoSrc={ic_ios}
+    name="iOS" logoSrc='/images/ic_ios.svg'
   />
 );
 
 export const web = () => (
   <SkillPreview 
-    name="Web" logoSrc={ic_web}
+    name="Web" logoSrc='/images/ic_web.svg'
   />
 );
 
 export const backend = () => (
   <SkillPreview 
-    name="Backend" logoSrc={ic_backend}
+    name="Backend" logoSrc='/images/ic_backend.svg'
   />
 );
