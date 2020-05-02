@@ -22,29 +22,29 @@ const HubspotFormContainer = styled.div`
 
 export class Contact extends Component {
 
-  componentDidMount() {
-  	const script = document.createElement('script');
-    script.src = 'https://js.hsforms.net/forms/v2.js';
-    document.body.appendChild(script);
+  // componentDidMount() {
+  // 	const script = document.createElement('script');
+  //   script.src = 'https://js.hsforms.net/forms/v2.js';
+  //   document.body.appendChild(script);
     
-    script.addEventListener('load', () => {
-    	if(window.hbspt) {
-      	window.hbspt.forms.create({
-        	portalId: '7066917',
-          formId: '43535f8f-187c-40c7-bdd2-0b41d59c0142',
-          target: '#hubspotForm'
-        })
-      }
-    });
-  }
+  //   script.addEventListener('load', () => {
+  //   	if(window.hbspt) {
+  //     	window.hbspt.forms.create({
+  //       	portalId: '7066917',
+  //         formId: '43535f8f-187c-40c7-bdd2-0b41d59c0142',
+  //         target: '#hubspotForm'
+  //       })
+  //     }
+  //   });
+  // }
   
 	render() {
   	return (
   		<Container>
         <TitleLabel>Have something to say or just want to say Hi?</TitleLabel>
-        <HubspotFormContainer>
+        {/* <HubspotFormContainer>
   		    <div id="hubspotForm"></div>
-        </HubspotFormContainer>
+        </HubspotFormContainer> */}
   		</Container>
     );
   }
