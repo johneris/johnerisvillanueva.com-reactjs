@@ -138,7 +138,7 @@ const NavListItemButton = styled.button`
   }
 `;
 
-export class Header extends Component {
+export class HeaderSection extends Component {
 
   constructor(props) {
     super(props);
@@ -190,8 +190,8 @@ export class Header extends Component {
   }
 }
 
-Header.propTypes = {
+HeaderSection.propTypes = {
   height: PropTypes.number
 };
 
-export default Header
+export default HeaderSection

@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../../styles/styles.css';
 
-import Contact from "./Contact";
+import ContactSection from "./ContactSection";
 
 export default {
-  title: 'Contact',
-  component: Contact
+  title: 'ContactSection',
+  component: ContactSection
 };
 
 export const Default = () => (
-  <Contact/>
+  <ContactSection/>
 );

@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../../styles/styles.css';
 
-import Footer from "./Footer";
+import FooterSection from "./FooterSection";
 
 export default {
-  title: 'Footer',
-  component: Footer
+  title: 'FooterSection',
+  component: FooterSection
 };
 
 export const Default = () => (
-  <Footer/>
+  <FooterSection/>
 );

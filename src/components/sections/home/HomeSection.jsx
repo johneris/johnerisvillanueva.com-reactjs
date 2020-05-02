@@ -263,7 +263,7 @@ const GreetingsLabel = styled.div`
   }
 `;
 
-export class Home extends Component {
+export class HomeSection extends Component {
   render() {
     return (
       <Container>
@@ -309,4 +309,4 @@ export class Home extends Component {
   }
 }
 
-export default Home
+export default HomeSection

@@ -20,7 +20,7 @@ const HubspotFormContainer = styled.div`
   margin-top: 3em;
 `;
 
-export class Contact extends Component {
+export class ContactSection extends Component {
 
   // componentDidMount() {
   // 	const script = document.createElement('script');
@@ -50,4 +50,4 @@ export class Contact extends Component {
   }
 }
 
-export default Contact
+export default ContactSection

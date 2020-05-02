@@ -5,14 +5,14 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 import { device } from '../helpers/MediaQueryHelper';
 
 import CustomizedParticles from '../components/ui_library/particles/CustomizedParticles';
-import Header from '../components/sections/header/Header';
-import Home from '../components/sections/home/Home';
+import HeaderSection from '../components/sections/header/HeaderSection';
+import HomeSection from '../components/sections/home/HomeSection';
 import ProjectsSection from '../components/sections/projects/ProjectsSection';
 import SkillsSection from '../components/sections/skills/SkillsSection';
 import QuotationSection from '../components/sections/quotation/QuotationSection';
 import AboutSection from '../components/sections/about/AboutSection';
-import Contact from '../components/sections/contact/Contact';
-import Footer from '../components/sections/footer/Footer';
+import ContactSection from '../components/sections/contact/ContactSection';
+import FooterSection from '../components/sections/footer/FooterSection';
 
 const MainContainer = styled.div`
   display: flex;
@@ -114,7 +114,7 @@ export class App extends Component {
         <Element name="home"/>
         <HeaderHomeContainer>
           <HeaderContainer>
-            <Header 
+            <HeaderSection 
               height="4em"
               onHomeClicked={this.onHomeClicked}
               onProjectsClicked={this.onProjectsClicked}
@@ -124,7 +124,7 @@ export class App extends Component {
             />
           </HeaderContainer>
           <ParticleContainer><CustomizedParticles width="100%" height="100vh"/></ParticleContainer>
-          <HomeContainer><Home/></HomeContainer>
+          <HomeContainer><HomeSection/></HomeContainer>
         </HeaderHomeContainer>
         {/* Projects */}
         <Element name="projects"/>
@@ -139,9 +139,9 @@ export class App extends Component {
         <AboutSection/>
         {/* Contact */}
         <Element name="contact"/>
-        <Contact/>
+        <ContactSection/>
         {/* Footer */}
-        <Footer 
+        <FooterSection 
           onHomeClicked={this.onHomeClicked}
           onProjectsClicked={this.onProjectsClicked}
           onSkillsClicked={this.onSkillsClicked}
