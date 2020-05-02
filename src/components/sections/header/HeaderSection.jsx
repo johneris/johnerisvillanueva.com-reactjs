@@ -178,10 +178,10 @@ export class HeaderSection extends Component {
           </NavListContainer>
           <RightSideContainer>
             <MenuButton onClick={this.openNav} isOpen={this.state.isResponsiveNavOpen}>
-              <ImageIcon src="/images/ic_menu.svg" alt="menu" />
+              <ImageIcon src="/images/ic_menu_24px.svg" alt="menu" />
             </MenuButton>
             <CloseButton onClick={this.closeNav} isOpen={this.state.isResponsiveNavOpen}>
-              <ImageIcon src="/images/ic_close.svg" alt="close menu" />
+              <ImageIcon src="/images/ic_close_24px.svg" alt="close menu" />
             </CloseButton>
           </RightSideContainer>
         </Wrapper>
