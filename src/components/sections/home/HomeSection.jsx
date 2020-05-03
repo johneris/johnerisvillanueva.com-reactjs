@@ -91,7 +91,7 @@ const ContactContainer = styled.div`
   }
 
   @media ${device.lowerThanMobileL} {
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
 
