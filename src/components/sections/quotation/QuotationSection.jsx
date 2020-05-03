@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 50%;
+  width: 70%;
 
   display: flex;
   flex-direction: column;
@@ -49,9 +49,15 @@ export class QuotationSection extends Component {
       <Container>
         <Wrapper>
           <Quote>
-            If life were predictable it would cease to be life and be without flavor.
+          <span style={{color: '#23A155'}}>Change - real change - comes from the inside out.</span>
+          &nbsp;It doesn't come from hacking at the leaves of attitude and behavior with quick fix personality ethic techniques.
+          &nbsp;<span style={{color: '#23A155'}}>It comes from striking at the root</span>
+          &nbsp;- the fabric of our thought, the fundamental, essential paradigms,
+          &nbsp;<span style={{color: '#23A155'}}>which we give definition to our character</span>
+          &nbsp;and create the lens through
+          &nbsp;<span style={{color: '#23A155'}}>which we see the world</span>.
           </Quote>
-          <Author>- Someone</Author>
+          <Author>- Stephen Covey, The 7 Habits of Highly Effective People</Author>
         </Wrapper>
       </Container>
     )
