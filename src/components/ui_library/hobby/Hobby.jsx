@@ -13,6 +13,7 @@ const Container = styled.div`
 `;
 
 const HobbyIcon = styled.img`
+  width: 90%;
 `;
 
 const HobbyLabel = styled.h4`

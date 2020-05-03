@@ -52,6 +52,11 @@ const SectionsContainer = styled.div`
 const LogoWebsiteContainer = styled.div`
   display: flex;
   flex-flow: row;
+  align-items: flex-start;
+
+  @media ${device.lowerThanLaptop} {
+    flex-flow: column;
+  }
 `;
 
 const InfoSectionContainer = styled.div`
@@ -61,6 +66,10 @@ const InfoSectionContainer = styled.div`
 const LogoImage = styled.img`
   height: 1.5em;
   margin-right: 1em;
+
+  @media ${device.lowerThanLaptop} {
+    margin-bottom: 1em;
+  }
 `;
 
 const Info = styled.p`

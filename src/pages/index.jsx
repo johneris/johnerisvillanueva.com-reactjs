@@ -136,13 +136,13 @@ export class App extends Component {
         <Element name="skills"/>
         <SkillsSection/>
         {/* Quote */}
-        {/* <QuotationSection/> */}
+        <QuotationSection/>
         {/* About */}
         <Element name="about"/>
-        {/* <AboutSection/> */}
+        <AboutSection/>
         {/* Contact */}
         <Element name="contact"/>
-        {/* <ContactSection/> */}
+        <ContactSection/>
         {/* Footer */}
         <FooterSection 
           onHomeClicked={this.onHomeClicked}

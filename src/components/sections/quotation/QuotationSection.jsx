@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { device } from '../../../helpers/MediaQueryHelper';
+
 const Container = styled.div`
   width: 100%;
   padding-top: 8rem;
@@ -23,14 +25,22 @@ const Wrapper = styled.div`
 const Quote = styled.q`
   font-size: 2em;
   text-align: center;
+
+  @media ${device.lowerThanTablet} {
+    font-size: 1.5em;
+  }
 `;
 
 const Author = styled.p`
   margin-top: 1.5rem;
   
   color: #A7ADB1;
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: italic;
+
+  @media ${device.lowerThanTablet} {
+    font-size: 1em;
+  }
 `;
 
 export class QuotationSection extends Component {
