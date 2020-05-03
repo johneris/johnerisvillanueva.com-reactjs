@@ -144,13 +144,13 @@ export class App extends Component {
         <Element name="contact"/>
         {/* <ContactSection/> */}
         {/* Footer */}
-        {/* <FooterSection 
+        <FooterSection 
           onHomeClicked={this.onHomeClicked}
           onProjectsClicked={this.onProjectsClicked}
           onSkillsClicked={this.onSkillsClicked}
           onAboutClicked={this.onAboutClicked}
           onContactClicked={this.onContactClicked}
-        /> */}
+        />
       </MainContainer>
     )
   }

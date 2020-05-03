@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 
+import { device } from '../../../helpers/MediaQueryHelper';
+
 const Container = styled.footer`
   width: 100%;
 
@@ -15,18 +17,36 @@ const Wrapper = styled.div`
   padding-bottom: 5.3em;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+
+  @media ${device.lowerThanLaptop} {
+    flex-direction: column;
+  }
 `;
 
 const InfoContainer = styled.div`
+  margin-right: 4rem;
   display: flex;
   flex-direction: column;
+
+  @media ${device.lowerThanLaptop} {
+    margin-right: 0;
+  }
 `;
 
 const SectionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  flex-wrap: nowrap;
+
+  @media ${device.lowerThanLaptop} {
+    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 const LogoWebsiteContainer = styled.div`
@@ -44,11 +64,6 @@ const LogoImage = styled.img`
 `;
 
 const Info = styled.p`
-  font-size: 1em;
-  color: #E1E2E7;
-`;
-
-const SectionLabel = styled.p`
   font-size: 1em;
   color: #E1E2E7;
 `;
@@ -89,7 +104,6 @@ export class Footer extends Component {
             </InfoSectionContainer>
           </InfoContainer>
           <SectionsContainer>
-            <SectionLabel>Section</SectionLabel>
             <SectionButton onClick={this.props.onHomeClicked}>Home</SectionButton>
             <SectionButton onClick={this.props.onProjectsClicked}>Projects</SectionButton>
             <SectionButton onClick={this.props.onSkillsClicked}>Skills</SectionButton>
