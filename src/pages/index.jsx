@@ -110,6 +110,14 @@ export class App extends Component {
     })
   }
 
+  onContactMeClicked() {
+    scroller.scrollTo('contact', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    })
+  }
+
   render() {
     return (
       <MainContainer>
@@ -127,7 +135,7 @@ export class App extends Component {
             />
           </HeaderContainer>
           <ParticleContainer><CustomizedParticles width="100%" height="100vh"/></ParticleContainer>
-          <HomeContainer><HomeSection/></HomeContainer>
+          <HomeContainer><HomeSection onContactMeClicked={this.onContactMeClicked}/></HomeContainer>
         </HeaderHomeContainer>
         {/* Projects */}
         <Element name="projects"/>

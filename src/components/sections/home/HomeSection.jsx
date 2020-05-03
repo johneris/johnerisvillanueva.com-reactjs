@@ -321,7 +321,7 @@ export class HomeSection extends Component {
             </SkillListContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
-            <Button>Contact Me</Button>
+            <Button onClick={this.props.onContactMeClicked}>Contact Me</Button>
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
             <SocialMediaListContainer>
               <SocialMediaList>

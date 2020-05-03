@@ -9,13 +9,17 @@ const StyledButton = styled.button`
   font-size: 1.2em;
   background-color: #23A155;
   color: #FFFFFF;
+
+  :focus {
+    outline: none;
+  }
 `;
 
 export class Button extends Component {
   render() {
     const children = this.props.children;
     return (
-      <StyledButton>{children}</StyledButton>
+      <StyledButton onClick={this.props.onClick}>{children}</StyledButton>
     )
   }
 }
