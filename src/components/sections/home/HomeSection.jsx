@@ -11,8 +11,13 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
 
+  min-height: 768px;
+
   @media ${device.lowerThanLaptop} {
-    height: auto;
+    /* 4rem header */
+    /* 35rem greetings container */
+    height: calc(100vh - 4rem + 35rem);
+    min-height: calc(768px - 4rem + 35rem);
   }
 `;
 
@@ -26,24 +31,30 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto;
-  grid-column-gap: 4em;
-  justify-content: space-between;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
   align-content: center;
 
   @media ${device.lowerThanLaptop} {
     width: 80%;
     margin-right: auto;
+    min-height: 0;
 
     grid-template-columns: 100%;
-    grid-template-rows: repeat(2, calc((100vh - 4rem)/2)) 35em;
+    /* 4rem grid-row-gap */
+    grid-template-rows: repeat(2, 1fr) calc(35rem - 4rem);
+    grid-row-gap: 4rem;
   }
 
   @media ${device.lowerThanTablet} {
-    grid-template-rows: calc((100vh - 4em) * 0.75) calc((100vh - 4em) * 0.25) 35em;
+    /* 1rem grid-row-gap */
+    grid-template-rows: 0.75fr 0.25fr calc(35rem - 1rem);
+    grid-row-gap: 1rem;
   }
 
   @media ${device.lowerThanMobileL} {
-    grid-template-rows: calc((100vh - 4em) * 0.6) calc((100vh - 4em) * 0.4) 35em;
+    grid-template-rows: 0.6fr 0.4fr 35rem;
+    grid-row-gap: 0;
   }
 `;
 
@@ -57,9 +68,6 @@ const HeadingSkillsContainer = styled.div`
   align-items: flex-start;
   
   @media ${device.lowerThanLaptop} {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    
     justify-content: flex-end;
   }
 
@@ -77,19 +85,9 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-top: 4rem;
-
-  @media (max-width: 1160px) {
-    padding-top: 2rem;
-  }
 
   @media ${device.lowerThanLaptop} {
-    padding-top: 4rem;
     justify-content: flex-start;
-  }
-
-  @media ${device.lowerThanTablet} {
-    padding-top: 1em;
   }
 
   @media ${device.lowerThanMobileL} {
@@ -266,10 +264,14 @@ const MeImage = styled.img`
     width: 100%;
   }
 
-  @media ${device.lowerThanLaptop} { 
+  @media ${device.lowerThanLaptop} {
+    height: 80%;
     width: auto;
-    max-height: 25rem;
-    max-width: 95%;
+  }
+
+  @media ${device.lowerThanMobileL} {
+    height: auto;
+    width: 100%;
   }
 `
 

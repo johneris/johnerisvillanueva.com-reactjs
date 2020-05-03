@@ -24,8 +24,11 @@ const HeaderHomeContainer = styled.div`
   width: 100%;
   background-color: #1B262C;
 
+  min-height: 768px;
+
   @media ${device.lowerThanLaptop} {
     height: calc(100vh + 35rem);
+    min-height: calc(768px + 35rem);
 
     display: flex;
     flex-direction: column;
