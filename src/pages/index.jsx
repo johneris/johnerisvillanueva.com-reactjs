@@ -131,26 +131,26 @@ export class App extends Component {
         </HeaderHomeContainer>
         {/* Projects */}
         <Element name="projects"/>
-        <ProjectsSection/>
+        {/* <ProjectsSection/> */}
         {/* Skills */}
         <Element name="skills"/>
         <SkillsSection/>
         {/* Quote */}
-        <QuotationSection/>
+        {/* <QuotationSection/> */}
         {/* About */}
         <Element name="about"/>
-        <AboutSection/>
+        {/* <AboutSection/> */}
         {/* Contact */}
         <Element name="contact"/>
-        <ContactSection/>
+        {/* <ContactSection/> */}
         {/* Footer */}
-        <FooterSection 
+        {/* <FooterSection 
           onHomeClicked={this.onHomeClicked}
           onProjectsClicked={this.onProjectsClicked}
           onSkillsClicked={this.onSkillsClicked}
           onAboutClicked={this.onAboutClicked}
           onContactClicked={this.onContactClicked}
-        />
+        /> */}
       </MainContainer>
     )
   }

@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+
+import { device } from '../../../helpers/MediaQueryHelper';
 
 import Skill from '../../ui_library/skill/Skill';
 
@@ -19,6 +21,10 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${device.lowerThanLaptop} {
+    width: 90%;
+  }
 `;
 
 const SkillsContainer = styled.div`
@@ -28,6 +34,20 @@ const SkillsContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: 2rem;
   grid-column-gap: 4rem;
+
+  @media ${device.lowerThanLaptopL} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+  }
+
+  @media ${device.lowerThanLaptop} {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 0;
+  }
 `;
 
 const TitleLabel = styled.h2`

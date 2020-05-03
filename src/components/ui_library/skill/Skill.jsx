@@ -47,6 +47,7 @@ const LevelContainer = styled.div`
 `;
 
 const SkillIcon = styled.img`
+  width: 50%;
 `;
 
 const SkillLabel = styled.h4`
