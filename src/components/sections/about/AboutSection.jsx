@@ -130,6 +130,10 @@ export class AboutSection extends Component {
 
     let days = now.diff(startDate, 'days');
 
+    let yearLabelSubstring = years > 1 ? 'EARS' : 'EAR'
+    let monthLabelSubstring = months > 1 ? 'ONTHS' : 'ONTH'
+    let dayLabelSubstring = days > 1 ? 'AYS' : 'AY'
+
     return (
       <Container>
         <Wrapper>
@@ -138,13 +142,13 @@ export class AboutSection extends Component {
           <WhiteVerticalBar/>
           <ExperienceContainer>
             { years > 0 &&
-              <YearMonthDayLabel><span style={{color: '#23A155'}}>{years}Y</span>EARS</YearMonthDayLabel>
+              <YearMonthDayLabel><span style={{color: '#23A155'}}>{years}Y</span>{yearLabelSubstring}</YearMonthDayLabel>
             }
             { months > 0 &&
-              <YearMonthDayLabel><span style={{color: '#23A155'}}>{months}M</span>ONTHS</YearMonthDayLabel>
+              <YearMonthDayLabel><span style={{color: '#23A155'}}>{months}M</span>{monthLabelSubstring}</YearMonthDayLabel>
             }
             { days > 0 &&
-              <YearMonthDayLabel><span style={{color: '#23A155'}}>{days}D</span>AYS</YearMonthDayLabel>
+              <YearMonthDayLabel><span style={{color: '#23A155'}}>{days}D</span>{dayLabelSubstring}</YearMonthDayLabel>
             }
             <ExperienceInfo>in the professional software development industry</ExperienceInfo>
           </ExperienceContainer>
