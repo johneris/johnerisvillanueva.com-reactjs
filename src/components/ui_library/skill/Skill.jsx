@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import { device } from '../../../helpers/MediaQueryHelper';
+
 const Container = styled.div`
   width: 100%;
   min-height: 10em;
@@ -16,19 +18,40 @@ const Container = styled.div`
   flex-direction: row;
 
   position: relative;
+
+  @media ${device.lowerThanMobileL} {
+    flex-direction: column;
+  }
 `;
 
 const SkillContainer = styled.div`
   width: 10em;
+  min-width: 10em;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${device.lowerThanTablet} {
+    width: 8em;
+    min-width: 8em;
+  }
+
+  @media ${device.lowerThanMobileL} {
+    margin-left: 1.5em;
+    flex-direction: row;
+  }
 `;
 
 const InfoContainer = styled.div`
   margin-right: 1em;
   display: flex;
   flex-direction: column;
+
+  @media ${device.lowerThanMobileL} {
+    margin-top: 1em;
+    margin-left: 1.5em;
+  }
 `;
 
 const LevelContainer = styled.div`
@@ -47,13 +70,26 @@ const LevelContainer = styled.div`
 `;
 
 const SkillIcon = styled.img`
-  width: 50%;
+  height: 5em;
+
+  @media ${device.lowerThanTablet} {
+    height: 4.5em;
+  }
+
+  @media ${device.lowerThanMobileL} {
+    height: 3em;
+  }
 `;
 
 const SkillLabel = styled.h4`
   font-size: 1em;
   margin-top: 1em;
   color: #CCD5DB;
+
+  @media ${device.lowerThanMobileL} {
+    margin-top: 0;
+    margin-left: 1em;
+  }
 `;
 
 const InfoTitle = styled.h4`
@@ -68,6 +104,7 @@ const InfoDetailContainer = styled.div`
 `;
 
 const InfoDetail = styled.p`
+  margin-bottom: 0.4rem;
   font-size: 1em;
   color: #CCD5DB;
 `;

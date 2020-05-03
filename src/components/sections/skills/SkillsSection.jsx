@@ -36,13 +36,6 @@ const SkillsContainer = styled.div`
   grid-column-gap: 4rem;
 
   @media ${device.lowerThanLaptopL} {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
-  }
-
-  @media ${device.lowerThanLaptop} {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 2rem;
@@ -66,38 +59,37 @@ export class SkillsSection extends Component {
             <Skill 
               name="Android" logoSrc="/images/ic_android.svg"
               level="Intermediate"
-              title="Native Java/Kotlin" 
+              title="Native Kotlin/Java" 
               details={["IDE: Android Studio", 
-              "Libraries Used: Dagger, Retrofit, RxJava, Gson",
+              "Tools/Libraries: Dagger, Retrofit, RxJava, Gson",
               "Architecture - MVP, MVVM, Clean Architecture",
-              "Others: Play Store Deployment"]}
+              "Others: Play Store Deployment, Firebase"]}
             />
             <Skill 
-              name="Android" logoSrc="/images/ic_android.svg"
-              level="Intermediate"
-              title="Native Java/Kotlin" 
-              details={["IDE: Android Studio", 
-              "Libraries Used: Dagger, Retrofit, RxJava, Gson",
-              "Architecture - MVP, MVVM, Clean Architecture",
-              "Others: Play Store Deployment"]}
+              name="iOS" logoSrc="/images/ic_ios.svg"
+              level="Advanced"
+              title="Native Objective-C/Swift" 
+              details={["IDE: XCode", 
+              "Tools/Libraries: Cocoapods, Carthage, XCodeGen, IGListKit, RxSwift, Fastlane",
+              "Architecture - MVP, MVVM, uFeatures, Coordinator",
+              "Others: App Store Deployment, Firebase, Buddybuild, TestFlight"]}
             />
             <Skill 
-              name="Android" logoSrc="/images/ic_android.svg"
-              level="Intermediate"
-              title="Native Java/Kotlin" 
-              details={["IDE: Android Studio", 
-              "Libraries Used: Dagger, Retrofit, RxJava, Gson",
-              "Architecture - MVP, MVVM, Clean Architecture",
-              "Others: Play Store Deployment"]}
+              name="Web" logoSrc="/images/ic_web.svg"
+              level="Beginner"
+              title="React.js, Next.js, Wordpress" 
+              details={["Code Editor: Visual Studio Code", 
+              "Tools/Libraries: Yarn, npm, Storybook, Moment.js, particles.js",
+              "Others: Static Site Deployment to GitHub Pages, Digital Ocean Deployment"]}
             />
             <Skill 
-              name="Android" logoSrc="/images/ic_android.svg"
+              name="Backend" logoSrc="/images/ic_backend.svg"
               level="Intermediate"
-              title="Native Java/Kotlin" 
-              details={["IDE: Android Studio", 
-              "Libraries Used: Dagger, Retrofit, RxJava, Gson",
-              "Architecture - MVP, MVVM, Clean Architecture",
-              "Others: Play Store Deployment"]}
+              title="Spring Boot Kotlin/Java, Laravel" 
+              details={["IDE/Code Editor: IntelliJ IDEA, Visual Studio Code", 
+              "Tools/Libraries: Gson, Feign, Laravel Nova, Laravel Socialite, Laravel Passport",
+              "Architecture - MVC, Clean Architecture, Microservices",
+              "Others: LEMP stack Deployment in Digital Ocean, Postman, Swagger"]}
             />
           </SkillsContainer>
         </Wrapper>

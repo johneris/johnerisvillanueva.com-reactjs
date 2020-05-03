@@ -116,7 +116,7 @@ export class Footer extends Component {
               <Info>
                 It is created using&nbsp;
                 <WebsiteLink target="_blank" rel="noopener noreferrer" href='https://reactjs.org/'>
-                React
+                React.js
                 </WebsiteLink>
                 &nbsp;and statically exported using&nbsp;
                 <WebsiteLink target="_blank" rel="noopener noreferrer" href='https://nextjs.org/'>
