@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import moment from 'moment';
 
 import { device } from '../../../helpers/MediaQueryHelper';
 
@@ -116,7 +117,19 @@ const InterestHeader = styled.h2`
 `;
 
 export class AboutSection extends Component {
+
   render() {
+    let now = moment();
+    let startDate = moment([2015, 4, 1]);
+
+    let years = now.diff(startDate, 'year');
+    startDate.add(years, 'years');
+
+    let months = now.diff(startDate, 'months');
+    startDate.add(months, 'months');
+
+    let days = now.diff(startDate, 'days');
+
     return (
       <Container>
         <Wrapper>
@@ -124,9 +137,15 @@ export class AboutSection extends Component {
           <ColoredVerticalBar/>
           <WhiteVerticalBar/>
           <ExperienceContainer>
-            <YearMonthDayLabel><span style={{color: '#23A155'}}>4Y</span>EARS</YearMonthDayLabel>
-            <YearMonthDayLabel><span style={{color: '#23A155'}}>7M</span>ONTHS</YearMonthDayLabel>
-            <YearMonthDayLabel><span style={{color: '#23A155'}}>5D</span>AYS</YearMonthDayLabel>
+            { years > 0 &&
+              <YearMonthDayLabel><span style={{color: '#23A155'}}>{years}Y</span>EARS</YearMonthDayLabel>
+            }
+            { months > 0 &&
+              <YearMonthDayLabel><span style={{color: '#23A155'}}>{months}M</span>ONTHS</YearMonthDayLabel>
+            }
+            { days > 0 &&
+              <YearMonthDayLabel><span style={{color: '#23A155'}}>{days}D</span>AYS</YearMonthDayLabel>
+            }
             <ExperienceInfo>in the professional software development industry</ExperienceInfo>
           </ExperienceContainer>
           <WhiteVerticalBar/>
