@@ -23,8 +23,8 @@ const Wrapper = styled.div`
   grid-template-rows: 1fr;
 
   @media ${device.lowerThanLaptopL} {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -65,14 +65,7 @@ const InterestsContainer = styled.div`
 const HobbiesContainer = styled.div`
   margin-top: 2rem;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 1.5rem;
-
-  @media ${device.lowerThanTablet} {
-    grid-column-gap: 1rem;
-  }
+  display: flex;
 `;
 
 const VerticalBar = styled.div`
