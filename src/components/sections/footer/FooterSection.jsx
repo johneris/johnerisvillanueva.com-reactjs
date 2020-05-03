@@ -73,6 +73,7 @@ const LogoImage = styled.img`
 `;
 
 const Info = styled.p`
+  margin-bottom: 1rem;
   font-size: 1em;
   color: #E1E2E7;
 `;
@@ -90,6 +91,12 @@ const SectionButton = styled.button`
   }
 `;
 
+const WebsiteLink = styled.a`
+  font-size: 1em;
+  color: #E1E2E7;
+  text-decoration: underline;
+`;
+
 export class Footer extends Component {
   render() {
     return (
@@ -98,16 +105,36 @@ export class Footer extends Component {
           <InfoContainer>
             <LogoWebsiteContainer>
               <LogoImage src="/images/ic_logo.svg"/>
-              <Info>johnerisvillanueva.com</Info>
+              <Info>
+                <WebsiteLink target="_blank" rel="noopener noreferrer" href='https://johnerisvillanueva.com'>
+                  johnerisvillanueva.com
+                </WebsiteLink>
+              </Info>
             </LogoWebsiteContainer>
             <InfoSectionContainer>
-              <Info>This is my personal website that shows my portfolio.</Info>
-              <Info>It is created using React.js. The code for this website is available at github.com.</Info>
+              <Info>This is my personal website that is created to showcase my portfolio.</Info>
+              <Info>
+                It is created using&nbsp;
+                <WebsiteLink target="_blank" rel="noopener noreferrer" href='https://reactjs.org/'>
+                React
+                </WebsiteLink>
+                &nbsp;and statically exported using&nbsp;
+                <WebsiteLink target="_blank" rel="noopener noreferrer" href='https://nextjs.org/'>
+                Next.js
+                </WebsiteLink>
+                .
+              </Info>
+              <Info>
+                The code for this website is available at&nbsp;
+                <WebsiteLink target="_blank" rel="noopener noreferrer" href='https://github.com/johneris/johnerisvillanueva.com-reactjs/'>
+                github.com
+                </WebsiteLink>
+                .
+              </Info>
             </InfoSectionContainer>
-            <InfoSectionContainer>
-              <Info>For my blog about software development, visit https://pinoydev.com.</Info>
-              <Info>For my blog about adventure and recreation, visit https://weekendersph.com.</Info>
-            </InfoSectionContainer>
+            {/* <InfoSectionContainer>
+              <Info>For my blog about software development, visit https://pinoycoder.ph.</Info>
+            </InfoSectionContainer> */}
             <InfoSectionContainer>
               <Info>&copy; John Eris Villanueva 2020</Info>
             </InfoSectionContainer>
