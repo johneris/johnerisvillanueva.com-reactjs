@@ -131,7 +131,7 @@ export class App extends Component {
         </HeaderHomeContainer>
         {/* Projects */}
         <Element name="projects"/>
-        {/* <ProjectsSection/> */}
+        <ProjectsSection/>
         {/* Skills */}
         <Element name="skills"/>
         <SkillsSection/>

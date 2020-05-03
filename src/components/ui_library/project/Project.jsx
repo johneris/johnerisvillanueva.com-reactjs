@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { device } from '../../../helpers/MediaQueryHelper';
+
 import ProjectFeature from '../project_feature/ProjectFeature';
 import ProjectPlatform from '../project_platform/ProjectPlatform';
-
 
 const Container = styled.div`
    display: flex;
@@ -17,6 +18,15 @@ const DetailsContainer = styled.div`
   grid-template-columns: 1fr auto;
   grid-template-rows: auto;
   grid-column-gap: 15%;
+
+  @media ${device.lowerThanLaptopL} {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media ${device.lowerThanMobileL} {
+    /* background-color: gray; */
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -25,21 +35,42 @@ const InfoContainer = styled.div`
 const FeatureList = styled.ul`
   display: flex;
   flex-direction: column;
+
+  @media ${device.lowerThanLaptopL} {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  @media ${device.lowerThanLaptop} {
+    flex-wrap: wrap;
+  }
 `;
 
 const FeatureItem = styled.li`
   margin-bottom: 1.5rem;
+
+  @media ${device.lowerThanLaptopL} {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media ${device.lowerThanTablet} {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const PlatformList = styled.ul`
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 const PlatformItem = styled.li`
   margin-right: 1.5rem;
+  margin-top: 1rem;
 `;
 
 const RoleContainer = styled.div`
@@ -57,11 +88,27 @@ const RoleContainer = styled.div`
 const ProjectTitle = styled.h1`
   color: #1B262C;
   font-size: 3em;
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 2.5em;
+  }
+
+  @media ${device.lowerThanMobileM} {
+    font-size: 2em;
+  }
 `;
 
 const RoleLabel = styled.h2`
   color: #4E5F69;
   font-size: 1.5em;
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 1.2em;
+  }
+
+  @media ${device.lowerThanMobileM} {
+    font-size: 1em;
+  }
 `;
 
 const DevelopedLabel = styled.h2`
@@ -69,6 +116,14 @@ const DevelopedLabel = styled.h2`
 
   color: #A7ADB1;
   font-size: 1.5em;
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 1.2em;
+  }
+
+  @media ${device.lowerThanMobileM} {
+    font-size: 1em;
+  }
 `;
 
 const ProjectDescription = styled.p`
@@ -76,6 +131,14 @@ const ProjectDescription = styled.p`
 
   color: #4E5F69;
   font-size: 1.2em;
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 1em;
+  }
+
+  @media ${device.lowerThanMobileM} {
+    font-size: 0.8em;
+  }
 `;
 
 const InvolvementDescription = styled.p`
@@ -83,6 +146,14 @@ const InvolvementDescription = styled.p`
   
   color: #A7ADB1;
   font-size: 1.2em;
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 1em;
+  }
+  
+  @media ${device.lowerThanMobileM} {
+    font-size: 0.8em;
+  }
 `;
 
 export class Project extends Component {

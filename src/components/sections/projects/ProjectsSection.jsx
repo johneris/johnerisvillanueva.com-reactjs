@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { device } from '../../../helpers/MediaQueryHelper';
+
 import Project from '../../ui_library/project/Project';
 import NavIconButton from '../../ui_library/nav_icon_button/NavIconButton';
 
@@ -37,6 +39,10 @@ const NavigationContainer = styled.div`
 const ProjectCountLabel = styled.p`
   color: #ADC6D5;
   font-size: 1.5em;
+
+  @media ${device.lowerThanMobileM} {
+    font-size: 1.2em;
+  }
 `;
 
 const NavIconWrapper = styled.div`
