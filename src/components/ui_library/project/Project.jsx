@@ -74,12 +74,18 @@ const PlatformItem = styled.li`
   margin-top: 1rem;
 `;
 
-const RoleContainer = styled.div`
-  padding-left: 0.8rem;
+const AppRoleContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
-  border-left-style: solid;
-  border-width: 0.25rem;
-  border-color: #24A255;
+const AppImage = styled.img`
+  width: 4rem;
+  height: 4rem;
+`;
+
+const RoleContainer = styled.div`
+  padding-left: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -113,7 +119,7 @@ const RoleLabel = styled.h2`
 `;
 
 const DevelopedLabel = styled.h2`
-  margin-top: 0.6em;
+  margin-top: 0.2em;
 
   color: #A7ADB1;
   font-size: 1.5em;
@@ -160,18 +166,21 @@ const InvolvementDescription = styled.p`
 export class Project extends Component {
   render() {
     const { 
-      title, role, vendor, description, involvement,
-      features, platforms
+      title, appImageSrc, role, vendor, 
+      description, involvement, features, platforms
     } = this.props;
     return (
       <Container>
         <ProjectTitle>{title}</ProjectTitle>
         <DetailsContainer>
           <InfoContainer>
-            <RoleContainer>
-              <RoleLabel>{role}</RoleLabel>
-              <DevelopedLabel>{vendor}</DevelopedLabel>
-            </RoleContainer>
+            <AppRoleContainer>
+              <AppImage src={appImageSrc}/>
+              <RoleContainer>
+                <RoleLabel>{role}</RoleLabel>
+                <DevelopedLabel>{vendor}</DevelopedLabel>
+              </RoleContainer>
+            </AppRoleContainer>
             <PlatformList>
               { platforms.map(platform => {
                 return <PlatformItem><ProjectPlatform name={platform.name} logoSrc={platform.logoSrc}/></PlatformItem>
@@ -193,6 +202,7 @@ export class Project extends Component {
 
 Project.propTypes = {
   title: PropTypes.string.isRequired,
+  appImageSrc: PropTypes.string,
   role: PropTypes.string.isRequired,
   vendor: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -200,7 +210,7 @@ Project.propTypes = {
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
   platforms: PropTypes.arrayOf(PropTypes.exact({
     name: PropTypes.string,
-    logoSrc: PropTypes.number
+    logoSrc: PropTypes.string
   })).isRequired
 };
 

@@ -60,30 +60,139 @@ export class ProjectsSection extends Component {
   state = {
     projects: [
       {
-        title: 'Project A',
-        role: 'Role: Team Captain, iOS Developer, Backend Developer',
+        title: 'Zing at Ayala Malls',
+        appImageSrc: '/images/projects/ic_zing.png',
+        role: 'Role: Team Lead, iOS and Backend Developer',
         vendor: 'Developed at White Cloak Technologies, Inc.',
-        description: 'Z!ng is Ayala Malls',
-        involvement: 'Involvement: January 2019 - May 2020',
+        description: 'Z!ng is Ayala Malls’ mobile app that includes indoor navigation, cinema booking, offers, promos, and rewards.',
+        involvement: 'Involvement: X',
         features: ['Loyalty and Rewards', 'Indoor Map', 'Cinema Booking', 'Mall Information'],
         platforms: [
           { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
           { name: 'Android', logoSrc: '/images/ic_android.svg' },
           { name: 'Web', logoSrc: '/images/ic_web.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
           { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
         ]
       },
       {
-        title: 'Project B',
-        role: 'Role: Developer',
-        vendor: 'Developed at Coreproc, Inc.',
-        description: 'Z!ng is Ayala Malls',
-        involvement: 'Involvement: January 2019 - May 2020',
-        features: ['Loyalty and Rewards', 'Indoor Map'],
+        title: 'UnionBank Online',
+        appImageSrc: '/images/projects/ic_ubonline.png',
+        role: 'Role: Lead iOS Developer',
+        vendor: 'Developed at White Cloak Technologies, Inc.',
+        description: 'I worked on the core features of the app including the Dashboard, Fund Transfer, Bills Payment, Buy Load, and a lot more.',
+        involvement: 'Involvement: ',
+        features: ['Fund Transfer', 'Bills Payment', 'Buy Load', 'Quick Balance'],
         platforms: [
           { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
           { name: 'Android', logoSrc: '/images/ic_android.svg' },
+          { name: 'Web', logoSrc: '/images/ic_web.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
           { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
+        ]
+      },
+      {
+        title: 'TakeFive Outdoors',
+        appImageSrc: '/images/projects/ic_takefive.png',
+        role: 'Role: Team Lead, iOS and Backend Developer',
+        vendor: 'Freelance',
+        description: 'TakeFive Outdoors organize monthly trips to mountains, beach, and anything outdoors. Book for trips using the app.',
+        involvement: 'Involvement: ',
+        features: ['Trips', 'Online Booking', 'Profile Levels', 'Vouchers'],
+        platforms: [
+          { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
+          { name: 'Android', logoSrc: '/images/ic_android.svg' },
+          { name: 'Web', logoSrc: '/images/ic_web.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
+          { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
+        ]
+      },
+      {
+        title: 'Figaro Coffee Systems Inc.',
+        appImageSrc: '/images/projects/ic_figaro.png',
+        role: 'Role: iOS Developer',
+        vendor: 'Developed at Coreproc, Inc.',
+        description: 'The Figaro Coffee App has a built-in rewards system that provides a give-gifts function to loyal and regular customers.',
+        involvement: 'Involvement: ',
+        features: ['', '', '', ''],
+        platforms: [
+          { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
+          { name: 'Android', logoSrc: '/images/ic_android.svg' },
+          { name: 'Web', logoSrc: '/images/ic_web.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
+          { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
+        ]
+      },
+      {
+        title: 'BG BRIDAL GALLERY',
+        appImageSrc: '/images/projects/ic_bridal_gallery.png',
+        role: 'Role: iOS Developer',
+        vendor: 'Developed at Coreproc, Inc.',
+        description: 'With its easy interface, Bridal Gallery is the most innovative wedding planning app in the Philippines today.',
+        involvement: 'Involvement: ',
+        features: ['', '', '', ''],
+        platforms: [
+          { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
+          { name: 'Android', logoSrc: '/images/ic_android.svg' },
+          { name: 'Web', logoSrc: '/images/ic_web.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
+          { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
+        ]
+      },
+      {
+        title: 'MyPocketDoctor',
+        appImageSrc: '/images/projects/ic_mypocketdoctor.png',
+        role: 'Role: iOS and Android Developer',
+        vendor: 'Developed at Coreproc, Inc.',
+        description: 'MyPocketDoctor is a medical advisory app, that provides you with fast access to doctors (telemedicine).',
+        involvement: 'Involvement: ',
+        features: ['', '', '', ''],
+        platforms: [
+          { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
+          { name: 'Android', logoSrc: '/images/ic_android.svg' },
+          { name: 'Web', logoSrc: '/images/ic_web.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
+          { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
+        ]
+      },
+      {
+        title: 'POS!BLE',
+        appImageSrc: '/images/projects/ic_posible.png',
+        role: 'Role: Android Developer',
+        vendor: 'Developed at Coreproc, Inc.',
+        description: 'Using an Android device, the retailers of POS!BLE can transact Bills Payment, Prepaid Load, and a lot more.',
+        involvement: 'Involvement: ',
+        features: ['', '', '', ''],
+        platforms: [
+          { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
+          { name: 'Android', logoSrc: '/images/ic_android.svg' },
+          { name: 'Web', logoSrc: '/images/ic_web.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
+          { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
+        ]
+      },
+      {
+        title: 'Old Spice Sales App',
+        appImageSrc: '/images/projects/ic_oldspice.png',
+        role: 'Role: Android Developer',
+        vendor: 'Freelance',
+        description: 'This app is used to advertise Old Spice products. It allows the agent to browse the products and play videos of Old Spice.',
+        involvement: 'Involvement: ',
+        features: ['', '', '', ''],
+        platforms: [
+          { name: 'Android', logoSrc: '/images/ic_android.svg' }
+        ]
+      },
+      {
+        title: 'Oral-B Electric Toothbrush Sales App',
+        appImageSrc: '/images/projects/ic_oralb.png',
+        role: 'Role: Android Developer',
+        vendor: 'Freelance',
+        description: 'This app is used to advertise the electric toothbrush of Oral-B. The app is a manual vs electric brushing game.',
+        involvement: 'Involvement: ',
+        features: ['', '', '', ''],
+        platforms: [
+          { name: 'Android', logoSrc: '/images/ic_android.svg' }
         ]
       }
     ],
@@ -123,6 +232,7 @@ export class ProjectsSection extends Component {
             </NavigationContainer>
           </HeaderContainer>
           <Project title={project.title}
+            appImageSrc={project.appImageSrc}
             role={project.role}
             vendor={project.vendor}
             description={project.description}
