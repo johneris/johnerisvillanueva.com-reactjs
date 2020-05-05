@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Head from 'next/head';
 import styled from 'styled-components';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
@@ -120,46 +121,59 @@ export class App extends Component {
 
   render() {
     return (
-      <MainContainer>
-        {/* Header and Home */}
-        <Element name="home"/>
-        <HeaderHomeContainer>
-          <HeaderContainer>
-            <HeaderSection 
-              height="4em"
-              onHomeClicked={this.onHomeClicked}
-              onProjectsClicked={this.onProjectsClicked}
-              onSkillsClicked={this.onSkillsClicked}
-              onAboutClicked={this.onAboutClicked}
-              onContactClicked={this.onContactClicked}
-            />
-          </HeaderContainer>
-          <ParticleContainer><CustomizedParticles width="100%" height="100vh"/></ParticleContainer>
-          <HomeContainer><HomeSection onContactMeClicked={this.onContactMeClicked}/></HomeContainer>
-        </HeaderHomeContainer>
-        {/* Projects */}
-        <Element name="projects"/>
-        <ProjectsSection/>
-        {/* Skills */}
-        <Element name="skills"/>
-        <SkillsSection/>
-        {/* Quote */}
-        <QuotationSection/>
-        {/* About */}
-        <Element name="about"/>
-        <AboutSection/>
-        {/* Contact */}
-        <Element name="contact"/>
-        <ContactSection/>
-        {/* Footer */}
-        <FooterSection 
-          onHomeClicked={this.onHomeClicked}
-          onProjectsClicked={this.onProjectsClicked}
-          onSkillsClicked={this.onSkillsClicked}
-          onAboutClicked={this.onAboutClicked}
-          onContactClicked={this.onContactClicked}
-        />
-      </MainContainer>
+      <div>
+        <Head>
+          <title>Eris | Web and Mobile Developer</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+          <link rel="manifest" href="/site.webmanifest"/>
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+          <meta name="msapplication-TileColor" content="#da532c"/>
+          <meta name="theme-color" content="#ffffff"/>
+        </Head>
+        <MainContainer>
+          {/* Header and Home */}
+          <Element name="home"/>
+          <HeaderHomeContainer>
+            <HeaderContainer>
+              <HeaderSection 
+                height="4em"
+                onHomeClicked={this.onHomeClicked}
+                onProjectsClicked={this.onProjectsClicked}
+                onSkillsClicked={this.onSkillsClicked}
+                onAboutClicked={this.onAboutClicked}
+                onContactClicked={this.onContactClicked}
+              />
+            </HeaderContainer>
+            <ParticleContainer><CustomizedParticles width="100%" height="100vh"/></ParticleContainer>
+            <HomeContainer><HomeSection onContactMeClicked={this.onContactMeClicked}/></HomeContainer>
+          </HeaderHomeContainer>
+          {/* Projects */}
+          <Element name="projects"/>
+          <ProjectsSection/>
+          {/* Skills */}
+          <Element name="skills"/>
+          <SkillsSection/>
+          {/* Quote */}
+          <QuotationSection/>
+          {/* About */}
+          <Element name="about"/>
+          <AboutSection/>
+          {/* Contact */}
+          <Element name="contact"/>
+          <ContactSection/>
+          {/* Footer */}
+          <FooterSection 
+            onHomeClicked={this.onHomeClicked}
+            onProjectsClicked={this.onProjectsClicked}
+            onSkillsClicked={this.onSkillsClicked}
+            onAboutClicked={this.onAboutClicked}
+            onContactClicked={this.onContactClicked}
+          />
+        </MainContainer>
+      </div>
     )
   }
 }
