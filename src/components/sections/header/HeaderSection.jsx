@@ -162,6 +162,31 @@ export class HeaderSection extends Component {
     });
   }
 
+  onNavClicked(navItem) {
+    this.setState({
+      isResponsiveNavOpen: false
+    });
+    switch (navItem) {
+      case "home":
+        this.props.onHomeClicked()
+        break;
+      case "projects":
+        this.props.onProjectsClicked()
+        break;
+      case "skills":
+        this.props.onSkillsClicked()
+        break;
+      case "about":
+        this.props.onAboutClicked()
+        break;
+      case "contact":
+        this.props.onContactClicked()
+        break;
+      default:
+        break;
+    }
+  }
+
   render() {
     return (
       <Container height={this.props.height}>
@@ -169,11 +194,11 @@ export class HeaderSection extends Component {
           <LeftSideContainer><LogoImage src="/images/ic_logo.svg" alt="logo"/></LeftSideContainer>
           <NavListContainer isOpen={this.state.isResponsiveNavOpen}>
             <NavList>
-              <NavListItem><NavListItemButton onClick={this.props.onHomeClicked}>Home</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.props.onProjectsClicked}>Projects</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.props.onSkillsClicked}>Skills</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.props.onAboutClicked}>About</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.props.onContactClicked}>Contact</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'home')}>Home</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'projects')}>Projects</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'skills')}>Skills</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'about')}>About</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'contact')}>Contact</NavListItemButton></NavListItem>
             </NavList>
           </NavListContainer>
           <RightSideContainer>
