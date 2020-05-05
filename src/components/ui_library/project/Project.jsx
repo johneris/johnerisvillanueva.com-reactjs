@@ -138,6 +138,7 @@ const ProjectDescription = styled.p`
 
   color: #4E5F69;
   font-size: 1.2em;
+  white-space: pre-wrap;
 
   @media ${device.lowerThanLaptop} {
     font-size: 1em;
