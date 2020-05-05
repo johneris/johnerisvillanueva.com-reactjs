@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import moment from 'moment';
+import * as moment from "moment/moment.js";
 
 import { device } from '../../../helpers/MediaQueryHelper';
 
