@@ -2,40 +2,33 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  width: 3em;
-  height: 3em;
-  border-radius: 1.5em;
+const Button = styled.button`
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
   background-color: #A7ADB1;
 
   display: flex;
   justify-content: center;
   align-items: center;
-`
 
-const Button = styled.div`
-  background-color: #A7ADB1;
-  padding: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  :focus {
+    outline: none;
+  }
 `;
 
 const Icon = styled.img`
-  height: 1.5em;
-  max-width: 1.5em;
+  height: 1.5rem;
+  max-width: 1.5rem;
 `
 
 export class NavIconButton extends Component {
   render() {
-    const { name, iconSrc } = this.props;
+    const { name, iconSrc, onClick } = this.props;
     return (
-      <Container>
-        <Button>
-          <Icon src={iconSrc} alt={name}/>
-        </Button>
-      </Container>
+      <Button onClick={onClick}>
+        <Icon src={iconSrc} alt={name}/>
+      </Button>
     )
   }
 }

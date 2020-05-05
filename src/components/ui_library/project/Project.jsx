@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { device } from '../../../helpers/MediaQueryHelper';
@@ -158,36 +159,49 @@ const InvolvementDescription = styled.p`
 
 export class Project extends Component {
   render() {
+    const { 
+      title, role, vendor, description, involvement,
+      features, platforms
+    } = this.props;
     return (
       <Container>
-        <ProjectTitle>Mall’s App and Website</ProjectTitle>
+        <ProjectTitle>{title}</ProjectTitle>
         <DetailsContainer>
           <InfoContainer>
             <RoleContainer>
-              <RoleLabel>Role: Team Captain, iOS Developer, Backend Developer</RoleLabel>
-              <DevelopedLabel>Developed at White Cloak Technologies, Inc.</DevelopedLabel>
+              <RoleLabel>{role}</RoleLabel>
+              <DevelopedLabel>{vendor}</DevelopedLabel>
             </RoleContainer>
             <PlatformList>
-              <PlatformItem><ProjectPlatform name="iOS" logoSrc="/images/ic_ios.svg"/></PlatformItem>
-              <PlatformItem><ProjectPlatform name="Android" logoSrc="/images/ic_android.svg"/></PlatformItem>
-              <PlatformItem><ProjectPlatform name="Web" logoSrc="/images/ic_web.svg"/></PlatformItem>
-              <PlatformItem><ProjectPlatform name="Backend" logoSrc="/images/ic_backend.svg"/></PlatformItem>
+              { platforms.map(platform => {
+                return <PlatformItem><ProjectPlatform name={platform.name} logoSrc={platform.logoSrc}/></PlatformItem>
+              }) }
             </PlatformList>
-            <ProjectDescription>
-              Z!ng is Ayala Malls’ mobile app that includes indoor navigation, cinema booking, offers, promos, and rewards. Z!ng is Ayala Malls’ mobile app that includes indoor navigation, cinema booking, offers, promos, and rewards.
-            </ProjectDescription>
-            <InvolvementDescription>Involvement: January 2019 - May 2020</InvolvementDescription>
+            <ProjectDescription>{description}</ProjectDescription>
+            <InvolvementDescription>{involvement}</InvolvementDescription>
           </InfoContainer>
           <FeatureList>
-            <FeatureItem><ProjectFeature name="Loyalty and Rewards"/></FeatureItem>
-            <FeatureItem><ProjectFeature name="Indoor Map"/></FeatureItem>
-            <FeatureItem><ProjectFeature name="Cinema Booking"/></FeatureItem>
-            <FeatureItem><ProjectFeature name="Mall Information"/></FeatureItem>
+            { features.map(feature => {
+              return <FeatureItem><ProjectFeature name={feature}/></FeatureItem>
+            }) }
           </FeatureList>
         </DetailsContainer>
       </Container>
     )
   }
 }
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
+  vendor: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  involvement: PropTypes.string.isRequired,
+  features: PropTypes.arrayOf(PropTypes.string).isRequired,
+  platforms: PropTypes.arrayOf(PropTypes.exact({
+    name: PropTypes.string,
+    logoSrc: PropTypes.number
+  })).isRequired
+};
 
 export default Project
