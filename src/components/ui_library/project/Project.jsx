@@ -163,11 +163,26 @@ const InvolvementDescription = styled.p`
   }
 `;
 
+const InvolvementDate = styled.p`
+  margin-top: 0.4rem;
+  
+  color: #A7ADB1;
+  font-size: 1.2em;
+
+  @media ${device.lowerThanLaptop} {
+    font-size: 1em;
+  }
+  
+  @media ${device.lowerThanMobileM} {
+    font-size: 0.8em;
+  }
+`;
+
 export class Project extends Component {
   render() {
     const { 
-      title, appImageSrc, role, vendor, 
-      description, involvement, features, platforms
+      title, appImageSrc, role, vendor, description, 
+      involvementDescription, involvementDate, features, platforms
     } = this.props;
     return (
       <Container>
@@ -187,7 +202,8 @@ export class Project extends Component {
               }) }
             </PlatformList>
             <ProjectDescription>{description}</ProjectDescription>
-            <InvolvementDescription>{involvement}</InvolvementDescription>
+            <InvolvementDescription>{involvementDescription}</InvolvementDescription>
+            <InvolvementDate>{involvementDate}</InvolvementDate>
           </InfoContainer>
           <FeatureList>
             { features.map(feature => {
@@ -206,7 +222,8 @@ Project.propTypes = {
   role: PropTypes.string.isRequired,
   vendor: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  involvement: PropTypes.string.isRequired,
+  involvementDescription: PropTypes.string.isRequired,
+  involvementDate: PropTypes.string.isRequired,
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
   platforms: PropTypes.arrayOf(PropTypes.exact({
     name: PropTypes.string,
