@@ -154,7 +154,7 @@ export class AboutSection extends Component {
           </ExperienceContainer>
           <WhiteVerticalBar/>
           <InterestsContainer>
-            <InterestHeader>My hobbies and interests beside<br/>software development</InterestHeader>
+            <InterestHeader>My hobbies and interests aside from<br/>software development</InterestHeader>
             <HobbiesContainer>
               <Hobby name="Run" logoSrc="/images/ic_run.svg"/>
               <Hobby name="Hike" logoSrc="/images/ic_hike.svg"/>
