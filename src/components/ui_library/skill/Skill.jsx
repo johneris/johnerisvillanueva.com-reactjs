@@ -6,6 +6,7 @@ import { device } from '../../../helpers/MediaQueryHelper';
 
 const Container = styled.div`
   width: 100%;
+  height: 100%;
   min-height: 10em;
   
   padding-top: 2em;
