@@ -134,7 +134,7 @@ export class Skill extends Component {
           <InfoTitle>{title}</InfoTitle>
           <InfoDetailContainer>
             { details.map(info => {
-              return <InfoDetail>{info}</InfoDetail>
+              return <InfoDetail key={info}>{info}</InfoDetail>
             }) }
           </InfoDetailContainer>
         </InfoContainer>

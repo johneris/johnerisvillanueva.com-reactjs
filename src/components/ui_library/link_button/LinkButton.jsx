@@ -23,7 +23,7 @@ export class LinkButton extends Component {
 }
 
 LinkButton.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.string.isRequired
 }
 
 export default LinkButton

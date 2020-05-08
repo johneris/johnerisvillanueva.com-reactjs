@@ -124,8 +124,8 @@ export class CustomizedParticles extends Component {
 }
 
 CustomizedParticles.propTypes = {
-  width: PropTypes.number,
-  height: PropTypes.number
+  width: PropTypes.string,
+  height: PropTypes.string
 };
 
 export default CustomizedParticles

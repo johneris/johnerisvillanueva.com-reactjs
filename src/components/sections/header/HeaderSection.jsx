@@ -212,7 +212,7 @@ export class HeaderSection extends Component {
 }
 
 HeaderSection.propTypes = {
-  height: PropTypes.number
+  height: PropTypes.string
 };
 
 export default HeaderSection

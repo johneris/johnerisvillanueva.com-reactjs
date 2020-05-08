@@ -198,8 +198,10 @@ export class Project extends Component {
               </RoleContainer>
             </AppRoleContainer>
             <PlatformList>
-              { platforms.map(platform => {
-                return <PlatformItem><ProjectPlatform name={platform.name} logoSrc={platform.logoSrc}/></PlatformItem>
+              { platforms.map(platform => {  
+                return <PlatformItem key={platform.name}>
+                  <ProjectPlatform name={platform.name} logoSrc={platform.logoSrc}/>
+                </PlatformItem>
               }) }
             </PlatformList>
             <ProjectDescription>{description}</ProjectDescription>
@@ -208,7 +210,9 @@ export class Project extends Component {
           </InfoContainer>
           <FeatureList>
             { features.map(feature => {
-              return <FeatureItem><ProjectFeature name={feature}/></FeatureItem>
+              return <FeatureItem key={feature}>
+                <ProjectFeature name={feature}/>
+              </FeatureItem>
             }) }
           </FeatureList>
         </DetailsContainer>
