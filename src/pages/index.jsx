@@ -71,48 +71,8 @@ const ParticleContainer = styled.div`
 
 export class App extends Component {
 
-  onHomeClicked() {
-    scroller.scrollTo('home', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    })
-  }
-
-  onProjectsClicked() {
-    scroller.scrollTo('projects', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    })
-  }
-
-  onSkillsClicked() {
-    scroller.scrollTo('skills', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    })
-  }
-
-  onAboutClicked() {
-    scroller.scrollTo('about', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    })
-  }
-
-  onContactClicked() {
-    scroller.scrollTo('contact', {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    })
-  }
-
-  onContactMeClicked() {
-    scroller.scrollTo('contact', {
+  scrollTo(elementName) {
+    scroller.scrollTo(elementName, {
       duration: 800,
       delay: 0,
       smooth: 'easeInOutQuart'
@@ -140,15 +100,23 @@ export class App extends Component {
             <HeaderContainer>
               <HeaderSection 
                 height="4em"
-                onHomeClicked={this.onHomeClicked}
-                onProjectsClicked={this.onProjectsClicked}
-                onSkillsClicked={this.onSkillsClicked}
-                onAboutClicked={this.onAboutClicked}
-                onContactClicked={this.onContactClicked}
+                onHomeClicked={this.scrollTo.bind(this, 'home')}
+                onProjectsClicked={this.scrollTo.bind(this, 'projects')}
+                onSkillsClicked={this.scrollTo.bind(this, 'skills')}
+                onAboutClicked={this.scrollTo.bind(this, 'about')}
+                onContactClicked={this.scrollTo.bind(this, 'contact')}
               />
             </HeaderContainer>
             <ParticleContainer><CustomizedParticles width="100%" height="100vh"/></ParticleContainer>
-            <HomeContainer><HomeSection onContactMeClicked={this.onContactMeClicked}/></HomeContainer>
+            <HomeContainer>
+              <HomeSection 
+                onAndroidClicked={this.scrollTo.bind(this, 'skills_android')}
+                oniOSClicked={this.scrollTo.bind(this, 'skills_ios')}
+                onWebClicked={this.scrollTo.bind(this, 'skills_web')}
+                onBackendClicked={this.scrollTo.bind(this, 'skills_backend')}
+                onContactMeClicked={this.scrollTo.bind(this, 'contact')}
+              />
+            </HomeContainer>
           </HeaderHomeContainer>
           {/* Projects */}
           <Element name="projects"/>
@@ -166,11 +134,11 @@ export class App extends Component {
           <ContactSection/>
           {/* Footer */}
           <FooterSection 
-            onHomeClicked={this.onHomeClicked}
-            onProjectsClicked={this.onProjectsClicked}
-            onSkillsClicked={this.onSkillsClicked}
-            onAboutClicked={this.onAboutClicked}
-            onContactClicked={this.onContactClicked}
+            onHomeClicked={this.scrollTo.bind(this, 'home')}
+            onProjectsClicked={this.scrollTo.bind(this, 'projects')}
+            onSkillsClicked={this.scrollTo.bind(this, 'skills')}
+            onAboutClicked={this.scrollTo.bind(this, 'about')}
+            onContactClicked={this.scrollTo.bind(this, 'contact')}
           />
         </MainContainer>
       </div>

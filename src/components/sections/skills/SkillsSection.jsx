@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 import { device } from '../../../helpers/MediaQueryHelper';
 
@@ -56,41 +57,49 @@ export class SkillsSection extends Component {
         <Wrapper>
           <TitleLabel>Tech Stack</TitleLabel>
           <SkillsContainer>
-            <Skill 
-              name="Android" logoSrc="/images/ic_android.svg"
-              level="Intermediate"
-              title="Native Kotlin/Java" 
-              details={["IDE: Android Studio", 
-              "Tools/Libraries: Dagger, Retrofit, RxJava, Gson",
-              "Architecture - MVP, MVVM, Clean Architecture",
-              "Others: Play Store Deployment, Firebase"]}
-            />
-            <Skill 
-              name="iOS" logoSrc="/images/ic_ios.svg"
-              level="Advanced"
-              title="Native Objective-C/Swift" 
-              details={["IDE: XCode", 
-              "Tools/Libraries: Cocoapods, Carthage, XCodeGen, IGListKit, RxSwift, Fastlane",
-              "Architecture - MVP, MVVM, uFeatures, Coordinator",
-              "Others: App Store Deployment, Firebase, Buddybuild, TestFlight"]}
-            />
-            <Skill 
-              name="Web" logoSrc="/images/ic_web.svg"
-              level="Beginner"
-              title="React.js, Next.js, Wordpress" 
-              details={["Code Editor: Visual Studio Code", 
-              "Tools/Libraries: Yarn, npm, Storybook, Moment.js, particles.js",
-              "Others: Static Site Deployment to GitHub Pages, Digital Ocean Deployment"]}
-            />
-            <Skill 
-              name="Backend" logoSrc="/images/ic_backend.svg"
-              level="Intermediate"
-              title="Spring Boot Kotlin/Java, Laravel" 
-              details={["IDE/Code Editor: IntelliJ IDEA, Visual Studio Code", 
-              "Tools/Libraries: Gson, Feign, Laravel Nova, Laravel Socialite, Laravel Passport",
-              "Architecture - MVC, Clean Architecture, Microservices",
-              "Others: LEMP stack Deployment in Digital Ocean, Postman, Swagger"]}
-            />
+            <Element name="skills_android">
+              <Skill 
+                name="Android" logoSrc="/images/ic_android.svg"
+                level="Intermediate"
+                title="Native Kotlin/Java" 
+                details={["IDE: Android Studio", 
+                "Tools/Libraries: Dagger, Retrofit, RxJava, Gson",
+                "Architecture - MVP, MVVM, Clean Architecture",
+                "Others: Play Store Deployment, Firebase"]}
+              />
+            </Element>
+            <Element name="skills_ios">
+              <Skill 
+                name="iOS" logoSrc="/images/ic_ios.svg"
+                level="Advanced"
+                title="Native Objective-C/Swift" 
+                details={["IDE: XCode", 
+                "Tools/Libraries: Cocoapods, Carthage, XCodeGen, IGListKit, RxSwift, Fastlane",
+                "Architecture - MVP, MVVM, uFeatures, Coordinator",
+                "Others: App Store Deployment, Firebase, Buddybuild, TestFlight"]}
+              />
+            </Element>
+            <Element name="skills_web">
+              <Skill 
+                name="Web" logoSrc="/images/ic_web.svg"
+                level="Beginner"
+                title="React.js, Next.js, Wordpress" 
+                details={["Code Editor: Visual Studio Code", 
+                "Tools/Libraries: Yarn, npm, Storybook, Moment.js, particles.js",
+                "Others: Static Site Deployment to GitHub Pages, Digital Ocean Deployment"]}
+              />
+            </Element>
+            <Element name="skills_backend">
+              <Skill 
+                name="Backend" logoSrc="/images/ic_backend.svg"
+                level="Intermediate"
+                title="Spring Boot Kotlin/Java, Laravel" 
+                details={["IDE/Code Editor: IntelliJ IDEA, Visual Studio Code", 
+                "Tools/Libraries: Gson, Feign, Laravel Nova, Laravel Socialite, Laravel Passport",
+                "Architecture - MVC, Clean Architecture, Microservices",
+                "Others: LEMP stack Deployment in Digital Ocean, Postman, Swagger"]}
+              />
+            </Element>
           </SkillsContainer>
         </Wrapper>
       </Container>

@@ -307,6 +307,11 @@ const GreetingsLabel = styled.div`
 
 export class HomeSection extends Component {
   render() {
+    const { 
+      onAndroidClicked, oniOSClicked,
+      onWebClicked, onBackendClicked,
+      onContactMeClicked
+     } = this.props;
     return (
       <Container>
         <Wrapper>
@@ -314,14 +319,14 @@ export class HomeSection extends Component {
             <SoftwareDevLabel>Software Developer</SoftwareDevLabel>
             <WebMobileLabel>Web and Mobile</WebMobileLabel>
             <SkillListContainer>
-              <SkillPreview name="Android" logoSrc="/images/ic_android.svg"/>
-              <SkillPreview name="iOS" logoSrc="/images/ic_ios.svg"/>
-              <SkillPreview name="Web" logoSrc="/images/ic_web.svg"/>
-              <SkillPreview name="Backend" logoSrc="/images/ic_backend.svg"/>
+              <SkillPreview name="Android" logoSrc="/images/ic_android.svg" onClick={onAndroidClicked}/>
+              <SkillPreview name="iOS" logoSrc="/images/ic_ios.svg" onClick={oniOSClicked}/>
+              <SkillPreview name="Web" logoSrc="/images/ic_web.svg" onClick={onWebClicked}/>
+              <SkillPreview name="Backend" logoSrc="/images/ic_backend.svg" onClick={onBackendClicked}/>
             </SkillListContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
-            <Button onClick={this.props.onContactMeClicked}>Contact Me</Button>
+            <Button onClick={onContactMeClicked}>Contact Me</Button>
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
             <SocialMediaListContainer>
               <SocialMediaList>
