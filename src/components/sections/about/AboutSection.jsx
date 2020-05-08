@@ -6,7 +6,7 @@ import { device } from '../../../helpers/MediaQueryHelper';
 
 import Hobby from '../../ui_library/hobby/Hobby';
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100%;
 
   background-color: #1B262C;
@@ -135,7 +135,7 @@ export class AboutSection extends Component {
     let dayLabelSubstring = days > 1 ? 'AYS' : 'AY'
 
     return (
-      <Container>
+      <Container id="about">
         <Wrapper>
           <WhiteVerticalBar/>
           <ColoredVerticalBar/>

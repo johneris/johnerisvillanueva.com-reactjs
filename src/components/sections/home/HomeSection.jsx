@@ -5,7 +5,7 @@ import { device } from '../../../helpers/MediaQueryHelper';
 
 import SkillPreview from '../../ui_library/skill_preview/SkillPreview';
 import SocialMediaLink from '../../ui_library/social_media_link/SocialMediaLink';
-import Button from '../../ui_library/button/Button';
+import LinkButton from '../../ui_library/link_button/LinkButton';
 
 const Container = styled.div`
   height: 100%;
@@ -319,14 +319,14 @@ export class HomeSection extends Component {
             <SoftwareDevLabel>Software Developer</SoftwareDevLabel>
             <WebMobileLabel>Web and Mobile</WebMobileLabel>
             <SkillListContainer>
-              <SkillPreview name="Android" logoSrc="/images/ic_android.svg" onClick={onAndroidClicked}/>
-              <SkillPreview name="iOS" logoSrc="/images/ic_ios.svg" onClick={oniOSClicked}/>
-              <SkillPreview name="Web" logoSrc="/images/ic_web.svg" onClick={onWebClicked}/>
-              <SkillPreview name="Backend" logoSrc="/images/ic_backend.svg" onClick={onBackendClicked}/>
+              <SkillPreview name="Android" logoSrc="/images/ic_android.svg" onClick={onAndroidClicked} href="#skills-android"/>
+              <SkillPreview name="iOS" logoSrc="/images/ic_ios.svg" onClick={oniOSClicked} href="#skills-ios"/>
+              <SkillPreview name="Web" logoSrc="/images/ic_web.svg" onClick={onWebClicked} href="#skills-web"/>
+              <SkillPreview name="Backend" logoSrc="/images/ic_backend.svg" onClick={onBackendClicked} href="#skills-backend"/>
             </SkillListContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
-            <Button onClick={onContactMeClicked}>Contact Me</Button>
+            <LinkButton onClick={onContactMeClicked} href="#contact">Contact Me</LinkButton>
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
             <SocialMediaListContainer>
               <SocialMediaList>

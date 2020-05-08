@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Container = styled.button`
+const Container = styled.a`
   width: 100%;
   height: 100%;
 
@@ -34,9 +34,9 @@ const SkillLabel = styled.h3`
 
 export class SkillPreview extends Component {
   render() {
-    const { name, logoSrc, onClick } = this.props;
+    const { name, logoSrc, onClick, href } = this.props;
     return (
-      <Container onClick={onClick}>
+      <Container onClick={onClick} href={href}>
         <SkillIcon src={logoSrc}></SkillIcon>
         <SkillLabel>{name}</SkillLabel>
       </Container>

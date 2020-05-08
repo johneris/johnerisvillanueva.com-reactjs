@@ -20,7 +20,7 @@ const MainContainer = styled.div`
   flex-direction: column;
 `;
 
-const HeaderHomeContainer = styled.div`
+const HeaderHomeContainer = styled.section`
   height: 100vh;
   width: 100%;
   background-color: #1B262C;
@@ -96,7 +96,7 @@ export class App extends Component {
         <MainContainer>
           {/* Header and Home */}
           <Element name="home"/>
-          <HeaderHomeContainer>
+          <HeaderHomeContainer id="home">
             <HeaderContainer>
               <HeaderSection 
                 height="4em"

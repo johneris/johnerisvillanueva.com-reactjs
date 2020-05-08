@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { device } from '../../../helpers/MediaQueryHelper';
 
-const Container = styled.div`
+const Container = styled.section`
   width: 80%;
   margin: auto;
 
@@ -54,7 +54,7 @@ export class ContactSection extends Component {
   
 	render() {
   	return (
-  		<Container>
+  		<Container id="contact">
         <TitleLabel>Have something to say or just want to say Hi?</TitleLabel>
         <HubspotFormContainer>
   		    <div id="hubspotForm"></div>

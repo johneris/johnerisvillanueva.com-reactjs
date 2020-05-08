@@ -119,22 +119,18 @@ const NavListItem = styled.li`
   }
 `;
 
-const NavListItemButton = styled.button`
+const NavListItemLink = styled.a`
   padding: 0.2em 0.4em;
   margin: 0.4em;
   color: #CCD5DB;
   background-color: transparent;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-transform: lowercase;
 
   :hover {
     background-color: #22A055;
     border-radius: 4px;
     color: white;
-  }
-
-  :focus {
-    outline: none;
   }
 `;
 
@@ -194,11 +190,11 @@ export class HeaderSection extends Component {
           <LeftSideContainer><LogoImage src="/images/ic_logo.svg" alt="logo"/></LeftSideContainer>
           <NavListContainer isOpen={this.state.isResponsiveNavOpen}>
             <NavList>
-              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'home')}>Home</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'projects')}>Projects</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'skills')}>Skills</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'about')}>About</NavListItemButton></NavListItem>
-              <NavListItem><NavListItemButton onClick={this.onNavClicked.bind(this, 'contact')}>Contact</NavListItemButton></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'home')} href="#home">Home</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'projects')} href="#projects">Projects</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'skills')} href="#skills">Skills</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'about')} href="#about">About</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'contact')} href="#contact">Contact</NavListItemLink></NavListItem>
             </NavList>
           </NavListContainer>
           <RightSideContainer>

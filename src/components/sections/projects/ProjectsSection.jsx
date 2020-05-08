@@ -6,10 +6,10 @@ import { device } from '../../../helpers/MediaQueryHelper';
 import Project from '../../ui_library/project/Project';
 import NavIconButton from '../../ui_library/nav_icon_button/NavIconButton';
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 `;
 
 const Wrapper = styled.div`
@@ -231,7 +231,7 @@ export class ProjectsSection extends Component {
   render() {
     let project = this.state.projects[this.state.selectedIndex];
     return (
-      <Container>
+      <Container id="projects">
         <Wrapper>
           <HeaderContainer>
             <ProjectCountLabel>{this.state.selectedIndex + 1} of {this.state.projects.length} projects</ProjectCountLabel>

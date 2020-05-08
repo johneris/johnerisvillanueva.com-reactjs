@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { device } from '../../../helpers/MediaQueryHelper';
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -46,7 +46,7 @@ const Author = styled.p`
 export class QuotationSection extends Component {
   render() {
     return (
-      <Container>
+      <Container id="quote">
         <Wrapper>
           <Quote>
           <span style={{color: '#23A155'}}>Change - real change - comes from the inside out.</span>

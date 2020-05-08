@@ -100,7 +100,7 @@ const WebsiteLink = styled.a`
 export class Footer extends Component {
   render() {
     return (
-      <Container>
+      <Container id="footer">
         <Wrapper>
           <InfoContainer>
             <LogoWebsiteContainer>

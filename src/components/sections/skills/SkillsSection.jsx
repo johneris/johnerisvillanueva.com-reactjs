@@ -6,7 +6,7 @@ import { device } from '../../../helpers/MediaQueryHelper';
 
 import Skill from '../../ui_library/skill/Skill';
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100%;
   background-color: #1B262C;
 `;
@@ -53,11 +53,11 @@ const TitleLabel = styled.h2`
 export class SkillsSection extends Component {
   render() {
     return (
-      <Container>
+      <Container id="skills">
         <Wrapper>
           <TitleLabel>Tech Stack</TitleLabel>
           <SkillsContainer>
-            <Element name="skills_android">
+            <Element name="skills_android" id="skills-android">
               <Skill 
                 name="Android" logoSrc="/images/ic_android.svg"
                 level="Intermediate"
@@ -68,7 +68,7 @@ export class SkillsSection extends Component {
                 "Others: Play Store Deployment, Firebase"]}
               />
             </Element>
-            <Element name="skills_ios">
+            <Element name="skills_ios" id="skills-ios">
               <Skill 
                 name="iOS" logoSrc="/images/ic_ios.svg"
                 level="Advanced"
@@ -79,7 +79,7 @@ export class SkillsSection extends Component {
                 "Others: App Store Deployment, Firebase, Buddybuild, TestFlight"]}
               />
             </Element>
-            <Element name="skills_web">
+            <Element name="skills_web" id="skills-web">
               <Skill 
                 name="Web" logoSrc="/images/ic_web.svg"
                 level="Beginner"
@@ -89,7 +89,7 @@ export class SkillsSection extends Component {
                 "Others: Static Site Deployment to GitHub Pages, Digital Ocean Deployment"]}
               />
             </Element>
-            <Element name="skills_backend">
+            <Element name="skills_backend" id="skills-backend">
               <Skill 
                 name="Backend" logoSrc="/images/ic_backend.svg"
                 level="Intermediate"
