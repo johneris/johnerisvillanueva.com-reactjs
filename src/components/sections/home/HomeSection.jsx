@@ -319,14 +319,14 @@ export class HomeSection extends Component {
             <SoftwareDevLabel>Software Developer</SoftwareDevLabel>
             <WebMobileLabel>Web and Mobile</WebMobileLabel>
             <SkillListContainer>
-              <SkillPreview name="Android" logoSrc="/images/ic_android.svg" onClick={onAndroidClicked} href="#skills-android"/>
-              <SkillPreview name="iOS" logoSrc="/images/ic_ios.svg" onClick={oniOSClicked} href="#skills-ios"/>
-              <SkillPreview name="Web" logoSrc="/images/ic_web.svg" onClick={onWebClicked} href="#skills-web"/>
-              <SkillPreview name="Backend" logoSrc="/images/ic_backend.svg" onClick={onBackendClicked} href="#skills-backend"/>
+              <SkillPreview name="Android" logoSrc="/images/ic_android.svg" onClick={onAndroidClicked}/>
+              <SkillPreview name="iOS" logoSrc="/images/ic_ios.svg" onClick={oniOSClicked}/>
+              <SkillPreview name="Web" logoSrc="/images/ic_web.svg" onClick={onWebClicked}/>
+              <SkillPreview name="Backend" logoSrc="/images/ic_backend.svg" onClick={onBackendClicked}/>
             </SkillListContainer>
           </HeadingSkillsContainer>
           <ContactContainer>
-            <LinkButton onClick={onContactMeClicked} href="#contact">Contact Me</LinkButton>
+            <LinkButton onClick={onContactMeClicked}>Contact Me</LinkButton>
             <EmailLabel>email: me@johnerisvillanueva.com</EmailLabel>
             <SocialMediaListContainer>
               <SocialMediaList>

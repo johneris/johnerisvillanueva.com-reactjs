@@ -190,11 +190,11 @@ export class HeaderSection extends Component {
           <LeftSideContainer><LogoImage src="/images/ic_logo.svg" alt="logo"/></LeftSideContainer>
           <NavListContainer isOpen={this.state.isResponsiveNavOpen}>
             <NavList>
-              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'home')} href="#home">Home</NavListItemLink></NavListItem>
-              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'projects')} href="#projects">Projects</NavListItemLink></NavListItem>
-              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'skills')} href="#skills">Skills</NavListItemLink></NavListItem>
-              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'about')} href="#about">About</NavListItemLink></NavListItem>
-              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'contact')} href="#contact">Contact</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'home')}>Home</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'projects')}>Projects</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'skills')}>Skills</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'about')}>About</NavListItemLink></NavListItem>
+              <NavListItem><NavListItemLink onClick={this.onNavClicked.bind(this, 'contact')}>Contact</NavListItemLink></NavListItem>
             </NavList>
           </NavListContainer>
           <RightSideContainer>

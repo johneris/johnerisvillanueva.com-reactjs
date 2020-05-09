@@ -183,7 +183,7 @@ export class App extends Component {
             onContactClicked={this.scrollTo.bind(this, 'contact')}
           />
           <ScrollTopButtonContainer showSrollToTop={this.state.showSrollToTop}>
-            <ScrollTopButton onClick={this.scrollTo.bind(this, 'home')} href="#home"></ScrollTopButton>
+            <ScrollTopButton onClick={this.scrollTo.bind(this, 'home')}></ScrollTopButton>
           </ScrollTopButtonContainer>
         </MainContainer>
       </div>
