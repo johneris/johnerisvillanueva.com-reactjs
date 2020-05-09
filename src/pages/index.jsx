@@ -14,6 +14,7 @@ import QuotationSection from '../components/sections/quotation/QuotationSection'
 import AboutSection from '../components/sections/about/AboutSection';
 import ContactSection from '../components/sections/contact/ContactSection';
 import FooterSection from '../components/sections/footer/FooterSection';
+import ScrollTopButton from '../components/ui_library/scroll_top_button/ScrollTopButton';
 
 const MainContainer = styled.div`
   display: flex;
@@ -69,7 +70,48 @@ const ParticleContainer = styled.div`
   z-index: 1;
 `;
 
+const ScrollTopButtonContainer = styled.div`
+  position: fixed;
+  bottom: 2rem;
+  right: 5%;
+
+  display: ${ props => {
+    return props.showSrollToTop ? "flex" : "none" 
+  }};
+`;
+
 export class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSrollToTop: false
+    }
+  }
+
+  componentDidMount() {
+    window.onscroll = function() {
+      if(window.pageYOffset === 0) {
+        this.setState({
+          showSrollToTop: false
+        });
+      }
+    }.bind(this);
+    Events.scrollEvent.register('end', function(to, element) {
+      if (to === "home" || to === null) {
+        return;
+      }
+      this.setState({
+        showSrollToTop: true
+      });
+    }.bind(this));
+    scrollSpy.update();
+  }
+
+  componentWillUnmount() {
+    window.onscroll = null;
+    Events.scrollEvent.remove('end');
+  }
 
   scrollTo(elementName) {
     scroller.scrollTo(elementName, {
@@ -140,6 +182,9 @@ export class App extends Component {
             onAboutClicked={this.scrollTo.bind(this, 'about')}
             onContactClicked={this.scrollTo.bind(this, 'contact')}
           />
+          <ScrollTopButtonContainer showSrollToTop={this.state.showSrollToTop}>
+            <ScrollTopButton onClick={this.scrollTo.bind(this, 'home')} href="#home"></ScrollTopButton>
+          </ScrollTopButtonContainer>
         </MainContainer>
       </div>
     )

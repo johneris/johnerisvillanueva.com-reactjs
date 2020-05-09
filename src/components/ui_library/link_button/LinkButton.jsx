@@ -9,8 +9,6 @@ const StyledLink = styled.a`
   font-size: 1.2rem;
   background-color: #23A155;
   color: #FFFFFF;
-
-  box-sizing: border-box;
 `;
 
 export class LinkButton extends Component {
