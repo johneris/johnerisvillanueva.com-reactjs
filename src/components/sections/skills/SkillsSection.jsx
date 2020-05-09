@@ -53,11 +53,11 @@ const TitleLabel = styled.h2`
 export class SkillsSection extends Component {
   render() {
     return (
-      <Container id="skills">
+      <Container>
         <Wrapper>
           <TitleLabel>Tech Stack</TitleLabel>
           <SkillsContainer>
-            <Element name="skills_android" id="skills-android">
+            <Element name="skills_android">
               <Skill 
                 name="Android" logoSrc="/images/ic_android.svg"
                 level="Intermediate"
@@ -68,7 +68,7 @@ export class SkillsSection extends Component {
                 "Others: Play Store Deployment, Firebase"]}
               />
             </Element>
-            <Element name="skills_ios" id="skills-ios">
+            <Element name="skills_ios">
               <Skill 
                 name="iOS" logoSrc="/images/ic_ios.svg"
                 level="Advanced"
@@ -79,7 +79,7 @@ export class SkillsSection extends Component {
                 "Others: App Store Deployment, Firebase, Buddybuild, TestFlight"]}
               />
             </Element>
-            <Element name="skills_web" id="skills-web">
+            <Element name="skills_web">
               <Skill 
                 name="Web" logoSrc="/images/ic_web.svg"
                 level="Beginner"
@@ -89,7 +89,7 @@ export class SkillsSection extends Component {
                 "Others: Static Site Deployment to GitHub Pages, Digital Ocean Deployment"]}
               />
             </Element>
-            <Element name="skills_backend" id="skills-backend">
+            <Element name="skills_backend">
               <Skill 
                 name="Backend" logoSrc="/images/ic_backend.svg"
                 level="Intermediate"

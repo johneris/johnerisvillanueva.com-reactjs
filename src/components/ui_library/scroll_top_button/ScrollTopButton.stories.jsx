@@ -9,5 +9,5 @@ export default {
 };
 
 export const Default = () => (
-  <ScrollTopButton href="#"></ScrollTopButton>
+  <ScrollTopButton></ScrollTopButton>
 );

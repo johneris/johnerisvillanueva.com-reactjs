@@ -231,7 +231,7 @@ export class ProjectsSection extends Component {
   render() {
     let project = this.state.projects[this.state.selectedIndex];
     return (
-      <Container id="projects">
+      <Container>
         <Wrapper>
           <HeaderContainer>
             <ProjectCountLabel>{this.state.selectedIndex + 1} of {this.state.projects.length} projects</ProjectCountLabel>

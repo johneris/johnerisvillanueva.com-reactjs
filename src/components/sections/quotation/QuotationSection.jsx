@@ -46,7 +46,7 @@ const Author = styled.p`
 export class QuotationSection extends Component {
   render() {
     return (
-      <Container id="quote">
+      <Container>
         <Wrapper>
           <Quote>
           <span style={{color: '#23A155'}}>Change - real change - comes from the inside out.</span>

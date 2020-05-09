@@ -54,7 +54,7 @@ export class ContactSection extends Component {
   
 	render() {
   	return (
-  		<Container id="contact">
+  		<Container>
         <TitleLabel>Have something to say or just want to say Hi?</TitleLabel>
         <HubspotFormContainer>
   		    <div id="hubspotForm"></div>

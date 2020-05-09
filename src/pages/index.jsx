@@ -138,7 +138,7 @@ export class App extends Component {
         <MainContainer>
           {/* Header and Home */}
           <Element name="home"/>
-          <HeaderHomeContainer id="home">
+          <HeaderHomeContainer>
             <HeaderContainer>
               <HeaderSection 
                 height="4em"

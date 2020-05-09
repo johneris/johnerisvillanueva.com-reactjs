@@ -135,7 +135,7 @@ export class AboutSection extends Component {
     let dayLabelSubstring = days > 1 ? 'AYS' : 'AY'
 
     return (
-      <Container id="about">
+      <Container>
         <Wrapper>
           <WhiteVerticalBar/>
           <ColoredVerticalBar/>
