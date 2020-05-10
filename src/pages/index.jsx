@@ -130,7 +130,7 @@ export class App extends Component {
     let now = moment();
     let startDate = moment([2015, 4, 1]);
     let years = now.diff(startDate, 'year');
-    let seoDescription = `Hi, I'm Eris. I have more than ${years} years of experience - Android (Native Kotlin/Java), iOS (Native Swift), Web (React.js), and Backend (Spring Boot, Laravel).`;
+    let seoDescription = `Hi, I'm Eris. I have ${years}+ years of combined web and mobile development experience - Android, iOS, Web, and Backend.`;
 
     return (
       <div>
