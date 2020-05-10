@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import ReactGA from 'react-ga';
+import * as moment from "moment/moment.js";
 
 import { device } from '../helpers/MediaQueryHelper';
 
@@ -126,10 +127,16 @@ export class App extends Component {
   }
 
   render() {
+    let now = moment();
+    let startDate = moment([2015, 4, 1]);
+    let years = now.diff(startDate, 'year');
+    let seoDescription = `Hi, I'm Eris. I have more than ${years} years of experience - Android (Native Kotlin/Java), iOS (Native Swift), Web (React.js), and Backend (Spring Boot, Laravel).`;
+
     return (
       <div>
         <Head>
-          <title>Eris | Web and Mobile Developer</title>
+          <title>Eris | Web and Mobile Developer (Philippines)</title>
+          <meta name="description" content={seoDescription}/>
           <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
