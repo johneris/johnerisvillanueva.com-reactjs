@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import ReactGA from 'react-ga';
 
 import { device } from '../helpers/MediaQueryHelper';
 
@@ -90,6 +91,9 @@ export class App extends Component {
   }
 
   componentDidMount() {
+    if (process.env.ENVIRONMENT === 'prod') {
+      ReactGA.initialize('UA-166057026-1');
+    }
     window.onscroll = function() {
       if(window.pageYOffset === 0) {
         this.setState({
