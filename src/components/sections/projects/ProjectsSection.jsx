@@ -66,7 +66,7 @@ export class ProjectsSection extends Component {
         vendor: 'Developed at White Cloak Technologies, Inc.',
         description: 'Zing is Ayala Malls’ mobile app and website that is meant to maximize the malling experience of its customers. With Zing, users can get free WiFi in all Ayala Malls, book movie tickets instantly, earn Zing points and redeem them as vouchers, find and navigate to shops and restaurants, and get updates on exclusive sales and promos.',
         involvementDescription: 'Involvement: from start to production and maintenance',
-        involvementDate: 'Date: Jan 2019 - Present',
+        involvementDate: 'Date: Jan 2019 - May 2020',
         features: ['Loyalty and Rewards', 'Indoor Map', 'Cinema Booking', 'Mall Information'],
         platforms: [
           { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
