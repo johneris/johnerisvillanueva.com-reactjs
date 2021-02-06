@@ -94,6 +94,22 @@ export class ProjectsSection extends Component {
         ]
       },
       {
+        title: 'Luxe Lips',
+        appImageSrc: '/images/projects/ic_luxelips.png',
+        role: 'Role: Team Lead, Flutter (iOS, Android) and Backend Developer',
+        vendor: 'Freelance Client: Luxe Lips',
+        description: 'Luxe Lips is a medical app for non-invasive aesthetic professionals. It also lets clients access consultations, face maps, and aesthetic tools and bookings via their mobile phones. Luxe Lips is also a patient management software designed for private cosmetic clinics.',
+        involvementDescription: 'Involvement: from start to production and maintenance',
+        involvementDate: 'Date: Aug 2020 – Present',
+        features: ['Cosmetic Clinic', 'Prescriptions', 'Consulations', 'Face Map'],
+        platforms: [
+          { name: 'iOS', logoSrc: '/images/ic_ios.svg' },
+          { name: 'Android', logoSrc: '/images/ic_android.svg' },
+          { name: 'Web Admin Portal', logoSrc: '/images/ic_web.svg' },
+          { name: 'Backend', logoSrc: '/images/ic_backend.svg' }
+        ]
+      },
+      {
         title: 'TakeFive Outdoors',
         appImageSrc: '/images/projects/ic_takefive.png',
         role: 'Role: Team Lead, iOS and Backend Developer',
