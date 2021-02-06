@@ -55,15 +55,15 @@ export class SkillsSection extends Component {
     return (
       <Container>
         <Wrapper>
-          <TitleLabel>Tech Stack</TitleLabel>
+          <TitleLabel>Technical Skills</TitleLabel>
           <SkillsContainer>
             <Element name="skills_android">
               <Skill 
                 name="Android" logoSrc="/images/ic_android.svg"
                 level="Intermediate"
-                title="Native Kotlin/Java" 
+                title="Native Kotlin/Java, Flutter" 
                 details={["IDE: Android Studio", 
-                "Tools/Libraries: Dagger, Retrofit, RxJava, Gson",
+                "Tools/Libraries: Dagger, Retrofit, RxJava, Gson, bloc, get_it",
                 "Architecture - MVP, MVVM, Clean Architecture",
                 "Others: Play Store Deployment, Firebase"]}
               />
@@ -72,9 +72,9 @@ export class SkillsSection extends Component {
               <Skill 
                 name="iOS" logoSrc="/images/ic_ios.svg"
                 level="Advanced"
-                title="Native Objective-C/Swift" 
+                title="Native Objective-C/Swift, Flutter" 
                 details={["IDE: XCode", 
-                "Tools/Libraries: Cocoapods, Carthage, XCodeGen, IGListKit, RxSwift, Fastlane",
+                "Tools/Libraries: Cocoapods, Carthage, XCodeGen, IGListKit, RxSwift, Fastlane, bloc, get_it",
                 "Architecture - MVP, MVVM, uFeatures, Coordinator",
                 "Others: App Store Deployment, Firebase, Buddybuild, TestFlight"]}
               />
@@ -86,18 +86,18 @@ export class SkillsSection extends Component {
                 title="React.js, Next.js, Wordpress" 
                 details={["Code Editor: Visual Studio Code", 
                 "Tools/Libraries: Yarn, npm, Storybook, Moment.js, particles.js",
-                "Others: Static Site Deployment to GitHub Pages, Digital Ocean Deployment"]}
+                "Others: Static Site Deployment to GitHub Pages, Digital Ocean Deployment, AWS EC2 Deployment"]}
               />
             </Element>
             <Element name="skills_backend">
               <Skill 
                 name="Backend" logoSrc="/images/ic_backend.svg"
                 level="Intermediate"
-                title="Spring Boot Kotlin/Java, Laravel" 
-                details={["IDE/Code Editor: IntelliJ IDEA, Visual Studio Code", 
+                title="Spring Boot Kotlin/Java, Laravel, AdonisJS" 
+                details={["IDE/Code Editor: IntelliJ IDEA, PHP Storm, Visual Studio Code", 
                 "Tools/Libraries: Gson, Feign, Laravel Nova, Laravel Socialite, Laravel Passport",
                 "Architecture - MVC, Clean Architecture, Microservices",
-                "Others: LEMP stack Deployment in Digital Ocean, Postman, Swagger"]}
+                "Others: LEMP stack Deployment in Digital Ocean, AWS EC2 Deployment, Postman, Swagger"]}
               />
             </Element>
           </SkillsContainer>
